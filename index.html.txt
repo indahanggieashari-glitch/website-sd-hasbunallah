@@ -1,0 +1,4274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Hasbunallah Tabalong | Membangun Generasi Qur'ani</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981', // Emerald 500 - Main Green
+                            600: '#059669', // Emerald 600 - Hover Green
+                            700: '#047857',
+                            900: '#064e3b',
+                        },
+                        accent: {
+                            400: '#fbbf24', // Amber 400 - Gold/Yellow accents
+                            500: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Animations */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-bg {
+      
+            background-image: linear-gradient(rgba(4, 120, 87, 0.85), rgba(6, 78, 59, 0.9)), url('https://i.ibb.co.com/8446v6S1/Whats-App-Image-2026-07-27-at-09-44-30.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+/* =========================================
+   SAMBUTAN KEPALA SEKOLAH
+========================================= */
+
+.sambutan-section {
+    padding: 90px 0;
+    background: #f8faf9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   JUDUL SECTION
+========================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    display: block;
+    color: #159a68;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.title-line {
+    width: 65px;
+    height: 4px;
+    background: #f5b82e;
+    border-radius: 10px;
+    margin: 15px auto 0;
+}
+
+
+/* =========================================
+   BOX SAMBUTAN
+========================================= */
+
+.sambutan-box {
+    display: grid;
+
+    /* Foto kiri - teks kanan */
+    grid-template-columns: 380px 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: #ffffff;
+
+    padding: 55px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   FOTO KEPALA SEKOLAH
+========================================= */
+
+.sambutan-foto {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Frame hijau muda di belakang foto */
+
+.foto-frame {
+    position: relative;
+
+    width: 100%;
+    max-width: 330px;
+
+    padding: 14px;
+
+    background: #d8f3eb;
+
+    border-radius: 20px;
+
+    transform: rotate(-2deg);
+
+    transition: 0.3s ease;
+}
+
+
+/* Foto */
+
+.foto-frame img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transform: rotate(2deg);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Hover */
+
+.foto-frame:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+
+/* =========================================
+   KONTEN SAMBUTAN
+========================================= */
+
+.sambutan-content {
+    padding: 10px 0;
+}
+
+
+/* Label kecil */
+
+.sambutan-label {
+    display: inline-block;
+
+    color: #159a68;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Judul */
+
+.sambutan-content h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+
+/* Garis kuning */
+
+.small-line {
+    width: 60px;
+
+    height: 4px;
+
+    background: #f5b82e;
+
+    border-radius: 10px;
+
+    margin: 22px 0;
+}
+
+
+/* Paragraf */
+
+.sambutan-content p {
+    color: #526174;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 0 0 18px;
+}
+
+
+/* =========================================
+   NAMA KEPALA SEKOLAH
+========================================= */
+
+.kepsek-name {
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.kepsek-name strong {
+    color: #172033;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+.kepsek-name span {
+    color: #159a68;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sambutan-box {
+        grid-template-columns: 300px 1fr;
+
+        gap: 40px;
+
+        padding: 40px;
+    }
+
+    .sambutan-content h3 {
+        font-size: 30px;
+    }
+
+    .sambutan-content p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media (max-width: 700px) {
+
+    .sambutan-section {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .sambutan-box {
+
+        /* berubah menjadi 1 kolom */
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 30px 20px;
+    }
+
+    .sambutan-foto {
+        order: 1;
+    }
+
+    .sambutan-content {
+        order: 2;
+    }
+
+    .foto-frame {
+        max-width: 280px;
+    }
+
+    .sambutan-content h3 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* =========================================
+   HP KECIL
+========================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .sambutan-box {
+        padding: 25px 15px;
+    }
+
+    .sambutan-content h3 {
+        font-size: 24px;
+    }
+
+    .sambutan-content p {
+        font-size: 15px;
+    }
+
+}
+/* =========================================
+   TENTANG SEKOLAH
+========================================= */
+
+.about-school {
+    padding: 90px 0;
+    background: #f7faf9;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   JUDUL
+========================================= */
+
+.about-heading {
+    margin-bottom: 45px;
+}
+
+.about-heading span {
+    display: block;
+
+    color: #159a68;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.about-heading h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   GRID 2 KOLOM
+========================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.about-card {
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   TENTANG SEKOLAH - KIRI
+========================================= */
+
+.school-card {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.school-content p {
+    color: #526174;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin: 0 0 20px;
+}
+
+
+.school-content strong {
+    color: #172033;
+
+    font-weight: 700;
+}
+
+
+.school-content em {
+    color: #526174;
+}
+
+
+/* =========================================
+   FOTO SEKOLAH
+========================================= */
+
+.school-image {
+    margin-top: 15px;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+
+.school-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.school-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   VISI
+========================================= */
+
+.vision-mission-card {
+    padding: 40px;
+}
+
+
+.vision-box,
+.mission-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.heading-icon {
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e7f7f0;
+
+    border-radius: 50%;
+
+    color: #159a68;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+
+.vision-box h3,
+.mission-box h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   TEKS VISI
+========================================= */
+
+.vision-text {
+    margin-top: 20px;
+
+    padding: 22px 25px;
+
+    background: #f0f8f5;
+
+    border-radius: 15px;
+}
+
+
+.vision-text p {
+    margin: 0;
+
+    color: #526174;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   PEMBATAS
+========================================= */
+
+.divider {
+    height: 1px;
+
+    background: #e4eee9;
+
+    margin: 30px 0;
+}
+
+
+/* =========================================
+   DAFTAR MISI
+========================================= */
+
+.mission-list {
+    list-style: none;
+
+    margin: 25px 0 0;
+
+    padding: 0;
+}
+
+
+.mission-list li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 15px 0;
+
+    color: #526174;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    border-bottom: 1px dashed #e1ebe6;
+}
+
+
+.mission-list li:last-child {
+    border-bottom: none;
+}
+
+
+.check {
+    width: 24px;
+
+    height: 24px;
+
+    min-width: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid #159a68;
+
+    border-radius: 50%;
+
+    color: #159a68;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-top: 1px;
+}
+
+
+/* =========================================
+   HOVER CARD
+========================================= */
+
+.about-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .about-heading h2 {
+        font-size: 36px;
+    }
+
+    .school-image img {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .about-school {
+        padding: 60px 0;
+    }
+
+    .about-container {
+        width: 92%;
+    }
+
+    .about-heading {
+        margin-bottom: 30px;
+    }
+
+    .about-heading span {
+        font-size: 12px;
+    }
+
+    .about-heading h2 {
+        font-size: 30px;
+    }
+
+    .about-card {
+        padding: 25px 20px;
+    }
+
+    .school-content p {
+        font-size: 15px;
+    }
+
+    .school-image img {
+        height: 220px;
+    }
+
+    .vision-mission-card {
+        padding: 25px 20px;
+    }
+
+    .vision-box h3,
+    .mission-box h3 {
+        font-size: 24px;
+    }
+
+    .heading-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 23px;
+    }
+
+    .vision-text {
+        padding: 18px;
+    }
+
+    .vision-text p {
+        font-size: 15px;
+    }
+
+    .mission-list li {
+        font-size: 14px;
+    }
+    /* =====================================
+   SLIDER PRESTASI
+===================================== */
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================
+   ANIMASI MODAL
+===================================== */
+
+@keyframes modalMasuk {
+
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+.animate-modal {
+    animation: modalMasuk 0.25s ease-out;
+}
+
+
+/* =====================================
+   CARD PRESTASI
+===================================== */
+
+.prestasi-card {
+    user-select: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+}
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                       <img src="https://i.ibb.co.com/b5s6vY2L/LOGO-HASBUNALLAH-TRANSPARAN.png">
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-xl text-brand-900 leading-tight">SD HASBUNALLAH</h1>
+                        <p class="text-xs text-slate-500 font-medium">Kabupaten Tabalong</p>
+                    </div>
+                </div>
+                       
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Profil</a>
+                    <a href="#program" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Program</a>
+                    
+                    <!-- Dropdown Menu: Informasi -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-slate-600 hover:text-brand-600 font-medium transition-colors focus:outline-none py-2">
+                            Informasi <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+                        </button>
+                        <!-- Dropdown Content -->
+                        <div class="absolute left-0 mt-2 w-56 bg-white border border-slate-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+                            <a href="#prestasi" class="block px-4 py-3 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium transition-colors border-b border-slate-50">
+                                <i class="fa-solid fa-trophy mr-2 text-brand-500"></i> Prestasi Siswa
+                            </a>
+                            <a href="#staff-section" class="block px-4 py-3 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium transition-colors">
+                                <i class="fa-solid fa-users-gear mr-2 text-brand-500"></i> Data Guru & Staf
+                            </a>
+                             <a href="#berita" class="block px-4 py-3 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium transition-colors border-b border-slate-50">
+                                <i class="fa-regular fa-newspaper mr-2 text-brand-500"></i> Berita & Kegiatan
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#kontak" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-brand-600/30 transition-all transform hover:-translate-y-0.5">
+                        Kontak
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full left-0">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#beranda" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 rounded-lg">Beranda</a>
+                <a href="#tentang" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 rounded-lg">Profil</a>
+                <a href="#program" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 rounded-lg">Program</a>
+                
+                <!-- Mobile Submenu: Informasi -->
+                <div class="px-3 py-2">
+                    <div class="text-base font-medium text-slate-800 mb-2 flex items-center">
+                        Informasi <i class="fa-solid fa-chevron-down text-xs ml-2 text-slate-400"></i>
+                    </div>
+                    <div class="pl-4 border-l-2 border-slate-100 space-y-1">
+                        <a href="#prestasi" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg">Prestasi Siswa</a>
+                        <a href="#staff-section" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg">Data Guru & Staf</a>
+                        <a href="#berita" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg">Berita & Kegiatan</a>
+                    </div>
+                </div>
+
+                <a href="#kontak" class="block px-3 py-3 mt-4 text-center text-base font-semibold text-white bg-brand-600 rounded-lg shadow-md hover:bg-brand-500 transition-colors">
+                    Kontak Kami
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-bg min-h-screen flex items-center relative pt-20">
+        <div class="absolute inset-0 bg-black/20"></div> <!-- Extra overlay for text readability -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-3xl text-center md:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-500/20 border border-brand-400 text-brand-100 font-medium text-sm mb-6 fade-in-up backdrop-blur-sm">
+                    Yayasan Hasbunallah Wani'mal Wakil
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6 fade-in-up delay-100">
+                    Membangun Generasi <span class="text-accent-400">Qur'ani</span>, Cerdas, dan Berprestasi.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-200 mb-10 fade-in-up delay-200 max-w-2xl font-light">
+                    SD Hasbunallah Tabalong membina akhlak mulia, mengoptimalkan kecerdasan, dan menyiapkan siswa menghadapi tantangan IPTEK masa depan.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start fade-in-up delay-300">
+                    <button
+    type="button"
+    id="btnMulaiJelajahi"
+    class="bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg shadow-brand-600/40 transition-all transform hover:-translate-y-1 text-center"
+>
+    Mulai Jelajahi
+</button>
+                    <a href="#kontak" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all text-center">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10 hidden md:block">
+            <a href="#profil" class="text-white/70 hover:text-white">
+                <i class="fa-solid fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="bg-white shadow-xl relative z-20 -mt-10 mx-4 sm:mx-8 md:mx-auto max-w-5xl rounded-2xl p-6 md:p-10 border border-slate-100">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <i class="fa-solid fa-users text-3xl text-brand-500 mb-3"></i>
+                <h3 class="text-3xl font-bold text-slate-800 font-heading">500+</h3>
+                <p class="text-slate-500 text-sm font-medium mt-1">Siswa Didik</p>
+            </div>
+            <div class="p-4">
+                <i class="fa-solid fa-chalkboard-user text-3xl text-brand-500 mb-3"></i>
+                <h3 class="text-3xl font-bold text-slate-800 font-heading">37+</h3>
+                <p class="text-slate-500 text-sm font-medium mt-1">Guru Profesional</p>
+            </div>
+            <div class="p-4">
+                <i class="fa-solid fa-award text-3xl text-brand-500 mb-3"></i>
+                <h3 class="text-3xl font-bold text-slate-800 font-heading">A</h3>
+                <p class="text-slate-500 text-sm font-medium mt-1">Akreditasi</p>
+            </div>
+            <div class="p-4">
+                <i class="fa-solid fa-school-circle-check text-3xl text-brand-500 mb-3"></i>
+                <h3 class="text-3xl font-bold text-slate-800 font-heading">Full Day</h3>
+                <p class="text-slate-500 text-sm font-medium mt-1">Sistem Sekolah</p>
+            </div>
+        </div>
+    </div>
+    
+   <!-- POPUP KEGIATAN SEKOLAH -->
+<div
+    id="kegiatanModal"
+    class="hidden fixed inset-0 z-[9999] bg-black/70 backdrop-blur-sm overflow-y-auto"
+>
+
+    <div class="min-h-screen flex items-center justify-center p-4">
+
+        <div class="bg-white w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden">
+
+            <!-- HEADER POPUP -->
+            <div class="bg-brand-900 px-6 py-7 md:px-10 relative">
+
+                <button
+                    type="button"
+                    id="btnCloseKegiatan"
+                    class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-red-500 transition"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <p class="text-accent-400 text-sm font-bold uppercase tracking-wider">
+                    Aktivitas Sekolah
+                </p>
+
+                <h2 class="text-2xl md:text-3xl font-heading font-bold text-white mt-2">
+                    Kegiatan Sehari-hari SD Hasbunallah
+                </h2>
+
+                <p class="text-brand-100 mt-2">
+                    Mengenal aktivitas siswa dari datang hingga pulang sekolah.
+                </p>
+
+            </div>
+
+
+            <!-- ISI -->
+            <div class="p-6 md:p-10">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+
+                    <!-- 1 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/0RKCbz7z/penyambutan.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Penyambutan siswa"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Pagi Hari
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Penyambutan Siswa<br> 
+                                (07.15-07.30)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa datang ke sekolah dan mendapatkan sambutan
+                                yang ramah sebelum memulai kegiatan.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 2 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/Ng0tth9c/sholat-dhuha.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Sholat Dhuha"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Pembiasaan Pagi
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Sholat Dhuha Berjamaah<br>
+                                (07.30-08.00)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa mengikuti pembiasaan pagi sebagai bagian
+                                dari pembentukan karakter dan kedisiplinan.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 3 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/1GvqJLh4/belajar.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Pembelajaran"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Kegiatan Belajar
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Kegiatan Belajar Mengajar<br>
+                                (08.00-09.30)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa mengikuti pembelajaran dengan suasana
+                                aktif, menyenangkan, dan penuh semangat.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 4 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/7JCqpym4/istirahat.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Istirahat"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Istirahat
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Istirahat ke-1<br>
+                                (09.30-09.45)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa beristirahat dan bersosialisasi bersama
+                                teman-teman dalam suasana yang menyenangkan.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 5 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/1GvqJLh4/belajar.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Kegiatan Belajar"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Kegiatan Belajar
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Kegiatan Belajar Mengajar<br> 
+                                (09.45-11.45)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa mengikuti pembelajaran dengan suasana tenang,
+                                aktif, menyenangkan, dan penuh semangat.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 6 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/7JCqpym4/istirahat.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Makan dan Persiapan Sholat"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Siang Hari
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Makan dan Persiapan Sholat Dzuhur Berjamaah<br> 
+                                (11.45-12.30)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa dipersilahkan untuk makan siang dan 
+                                bersiap untuk melaksanakan sholat dzuhur berjamaah dengan tertib.
+                            </p>
+
+                        </div>
+                    </div>
+                       <!-- 7 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/Mx5f82Q2/sholat1.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Sholat Dzuhur"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Siang Hari
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Sholat Dzuhur Berjamaah<br> 
+                                (12.30-13.00)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa melaksanakan kegiatan sholat dzuhur berjamaah dengan tertib.
+                            </p>
+
+                        </div>
+                    </div>
+                     <!-- 8 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/SD7CH3tm/istirahat-2.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Istirahat-2"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Siang Hari
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Istirahat ke-2<br> 
+                                (13.00-13.15)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa melaksanakan kegiatan sholat dzuhur berjamaah dengan tertib.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/1GvqJLh4/belajar.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Kegiatan Belajar"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Siang Hari
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Kegiatan Belajar dan Mengajar<br> 
+                                (13.15-15.15)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa melaksanakan kegiatan belajar dan mengajar dengan nyaman, aktif, dan tenang.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="rounded-2xl overflow-hidden bg-slate-50 shadow-md">
+
+                        <img
+                            src="https://i.ibb.co.com/1JbWcHKf/sholat3.jpg"
+                            class="w-full h-56 object-cover"
+                            alt="Pulang dan Sholat Ashar"
+                        >
+
+                        <div class="p-5">
+
+                            <span class="text-brand-600 text-sm font-semibold">
+                                Siang Hari
+                            </span>
+
+                            <h3 class="text-xl font-heading font-bold text-slate-800 mt-1">
+                                Kegiatan Sholat Ashar Berjamaah dan Pulang<br> 
+                                (15.30-16.00)
+                            </h3>
+
+                            <p class="text-slate-600 text-sm mt-2">
+                                Siswa selesai pembelajaran dan melaksanakan 
+                                Sholat Ashar berjamaah kemudian pulang ke rumah masing-masing.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- SAMBUTAN KEPALA SEKOLAH -->
+<section class="sambutan-section" id="sambutan">
+    <div class="container">
+
+        <!-- Judul Section -->
+        <div class="section-title">
+            <span>SAMBUTAN KEPALA SEKOLAH</span>
+            <h2>Sambutan Kepala Sekolah</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <!-- Isi Sambutan -->
+        <div class="sambutan-box">
+
+            <!-- FOTO KEPALA SEKOLAH -->
+            <div class="sambutan-foto">
+                <div class="foto-frame">
+                    <img 
+                        src="https://i.ibb.co.com/twjVj4Nq/Bu-Fatim.jpg" 
+                        alt="Kepala Sekolah SD Hasbunallah"
+                    >
+                </div>
+            </div>
+
+            <!-- TEKS SAMBUTAN -->
+            <div class="sambutan-content">
+
+                <span class="sambutan-label">
+                    SAMBUTAN KEPALA SEKOLAH
+                </span>
+
+                <h3>
+                    Assalamu'alaikum Warahmatullahi Wabarakatuh
+                </h3>
+
+                <div class="small-line"></div>
+
+                <p>
+                    Selamat datang di website resmi SD Hasbunallah.
+                    Website ini hadir sebagai media informasi dan komunikasi
+                    untuk memberikan gambaran tentang kegiatan, program,
+                    serta berbagai layanan pendidikan di sekolah kami.
+                </p>
+
+                <p>
+                    Semoga website ini dapat memberikan informasi yang
+                    bermanfaat bagi seluruh warga sekolah dan masyarakat.
+                </p>
+
+                <div class="kepsek-name">
+                    <strong>
+                        Siti Fatimah, S.E.I., S.Pd.
+                    </strong>
+
+                    <span>
+                        Kepala Sekolah SD Hasbunallah
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Profil Section -->
+    <!-- =========================================
+     TENTANG SEKOLAH, VISI & MISI
+========================================= -->
+<section class="about-school" id="tentang">
+
+    <div class="about-container">
+
+        <!-- JUDUL SECTION -->
+        <div class="about-heading">
+            <span>TENTANG SEKOLAH KAMI</span>
+            <h2>Sekolah Berbasis Karakter &amp;<br>IPTEK di Tabalong</h2>
+        </div>
+
+
+        <!-- GRID 2 KOLOM -->
+        <div class="about-grid">
+
+
+            <!-- =================================
+                 KOLOM KIRI
+                 TENTANG SEKOLAH
+            ================================== -->
+            <div class="about-card school-card">
+
+                <div class="school-content">
+
+                    <p>
+                        Berdiri di bawah naungan
+                        <strong>Yayasan Hasbunallah Wani'mal Wakil</strong>
+                        sejak tahun 2006, SD Hasbunallah didirikan atas
+                        gagasan tokoh agama KH. Akhmad Sanusi Ibrahim
+                        dengan dukungan masyarakat dan mitra industri.
+                    </p>
+
+                    <p>
+                        Kami berkomitmen memberikan pendidikan dasar
+                        yang memadukan nilai-nilai Islami dengan kemajuan
+                        Ilmu Pengetahuan dan Teknologi.
+                    </p>
+
+                    <p>
+                        Dengan sistem <em>Full Day School</em>, kami
+                        memastikan setiap anak didik mendapatkan porsi
+                        pendidikan yang seimbang antara akademik,
+                        pengembangan karakter, dan penanaman nilai spiritual.
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO SEKOLAH -->
+                <div class="school-image">
+
+                    <img
+                        src="https://i.ibb.co.com/svJ5S0rh/Chat-GPT-Image-10-Agu-2026-11-41-24.png"
+                        alt="SD Hasbunallah"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 KOLOM KANAN
+                 VISI & MISI
+            ================================== -->
+            <div class="about-card vision-mission-card">
+
+
+                <!-- VISI -->
+                <div class="vision-box">
+
+                    <div class="heading-icon">
+                        <span>◉</span>
+                    </div>
+
+                    <div>
+                        <h3>Visi</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="vision-text">
+
+                    <p>
+                        “Taqwa kepada Allah SWT, cerdas, sehat,
+                        dan menguasai IPTEK serta peduli lingkungan.”
+                    </p>
+
+                </div>
+
+
+                <!-- PEMBATAS -->
+                <div class="divider"></div>
+
+
+                <!-- MISI -->
+                <div class="mission-box">
+
+                    <div class="heading-icon">
+                        <span>◎</span>
+                    </div>
+
+                    <div>
+                        <h3>Misi</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- DAFTAR MISI -->
+                <ul class="mission-list">
+
+                    <li>
+                        <span class="check">✓</span>
+                        <span>
+                            Menanamkan akhlak dan budi pekerti
+                            yang mulia.
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="check">✓</span>
+                        <span>
+                            Mengoptimalkan kecerdasan intelektual,
+                            emosional dan spiritual.
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="check">✓</span>
+                        <span>
+                            Membina tubuh yang sehat dan kuat.
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="check">✓</span>
+                        <span>
+                            Menanamkan kemahiran dalam menyelesaikan
+                            masalah di bidang IPTEK.
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="check">✓</span>
+                        <span>
+                            Melaksanakan pembelajaran yang bertujuan pelestarian lingkungan, mencegah terjadinya pencemaran dan kerusakan lingkungan.
+
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Program Unggulan -->
+    <section id="program" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-brand-600 font-bold uppercase tracking-wider text-sm mb-2">Kurikulum & Kegiatan</h4>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">Program Unggulan Sekolah</h2>
+                <p class="text-slate-600 text-lg">Kami memfasilitasi perkembangan holistik siswa melalui berbagai program unggulan berbasis keislaman dan keterampilan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Metode Ummi (Khatmul Qur'an)</h3>
+                    <p class="text-slate-600">Metode pembelajaran membaca Al-Qur'an secara tartil. Diikuti dengan ujian Imtihan untuk memastikan kualitas bacaan dan hafalan juz siswa.</p>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-kaaba"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Manasik Haji Tahunan</h3>
+                    <p class="text-slate-600">Kegiatan praktik langsung ibadah haji di Islamic Center Tabalong guna mengenalkan rukun Islam kelima dan menanamkan nilai spiritual sejak dini.</p>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Pendidikan IPTEK</h3>
+                    <p class="text-slate-600">Sesuai visi misi kami, siswa diperkenalkan dengan dasar-dasar ilmu pengetahuan dan teknologi agar siap bersaing dan melek teknologi.</p>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Sekolah Peduli Lingkungan</h3>
+                    <p class="text-slate-600">Membudayakan cinta lingkungan melalui program kebersihan, pengelolaan sampah, dan pembiasaan hidup sehat bekerja sama dengan BPOM.</p>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Family Gathering</h3>
+                    <p class="text-slate-600">Kegiatan rutin yang melibatkan ribuan wali murid untuk mempererat silaturahmi, membentuk pribadi yang bersosial tinggi dan kuat dalam kekeluargaan.</p>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Full Day School</h3>
+                    <p class="text-slate-600">Pembelajaran selama 5 hari penuh yang memaksimalkan waktu anak di sekolah dengan lingkungan yang aman, nyaman, dan edukatif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ========================= -->
+<!-- PRESTASI SISWA -->
+<!-- ========================= -->
+<section id="prestasi" class="py-12 bg-brand-900 relative overflow-hidden">
+
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="prestasiPattern" width="40" height="40"
+                    patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+                </pattern>
+            </defs>
+
+            <rect
+                width="100%"
+                height="100%"
+                fill="url(#prestasiPattern)"
+                class="text-white">
+            </rect>
+        </svg>
+    </div>
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- JUDUL -->
+        <div class="text-center max-w-3xl mx-auto mb-10">
+
+            <h4 class="text-accent-400 font-bold uppercase tracking-wider text-sm mb-2">
+                Kebanggaan Sekolah
+            </h4>
+
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+                Prestasi Gemilang Siswa
+            </h2>
+
+            <p class="text-brand-100 text-lg">
+                Mengukir prestasi di berbagai bidang, bukti nyata dari dedikasi
+                dan kualitas pendidikan di SD Hasbunallah.
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- NAVIGASI SLIDER -->
+        <!-- ========================= -->
+
+        <div class="relative">
+
+            <!-- TOMBOL KIRI -->
+            <button
+                id="prestasiPrev"
+                type="button"
+                class="absolute left-0 top-1/2 -translate-y-1/2 z-20
+                       w-11 h-11 rounded-full
+                       bg-white text-brand-700
+                       shadow-xl
+                       flex items-center justify-center
+                       hover:bg-brand-50
+                       transition
+                       -translate-x-1/2">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <!-- AREA SLIDER -->
+            <div
+                id="prestasiSlider"
+                class="flex gap-6 overflow-x-auto scroll-smooth
+                       snap-x snap-mandatory
+                       pb-5
+                       px-2
+                       scrollbar-hide">
+
+                <!-- ========================= -->
+                <!-- PRESTASI 1 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 2 O2SN Atletik Putri',
+                        'Tingkat Provinsi',
+                        'Olimpiade Olahraga Siswa Nasional (O2SN) SD se-Kalimantan Selatan 2026.',
+                        'Mahira Hasna Kamila',
+                        'https://i.ibb.co.com/WNbyJL3z/mahira-02sn.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Tingkat Provinsi
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 2 O2SN Atletik Putri
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        Olimpiade Olahraga Siswa Nasional (O2SN) Provinsi Kalimantan Selatan 2026.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- PRESTASI 2 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 3 O2SN Bulu Tangkis Putri',
+                        'Tingkat Provinsi',
+                        'Olimpiade Olahraga Siswa Nasional (O2SN) Tingkat SD se-Kalimantan Selatan.',
+                        'Khairunnisa Salsabila',
+                        'https://i.ibb.co.com/kVVkFBdp/caca-o3sn.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-medal"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Tingkat Provinsi
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 3 O2SN Bulu Tangkis Putri
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        Olimpiade Olahraga Siswa Nasional (O2SN) Tingkat SD
+                        se-Kalimantan Selatan.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- PRESTASI 3 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 1 Lomba Tartil Putra',
+                        'Event Sekolah',
+                        'HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.',
+                        'Rifqi Zidan Farras',
+                        'https://i.ibb.co.com/svqdh21Q/tartil-zidan.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-medal"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Event Sekolah
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 1 Lomba Tartil Putra
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- PRESTASI 4 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 1 Lomba Tartil Putri',
+                        'Event Sekolah',
+                        'HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.',
+                        'Humaira Nurhafizah',
+                        'https://i.ibb.co.com/JFd90SqN/tartil-hafizah.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-palette"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Event Sekolah
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 1 Lomba Tartil Putri
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- PRESTASI 5 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 2 FLS3N Tari Kelompok',
+                        'Tingkat Kabupaten',
+                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Lomba Seni dan Sastra tingkat Kabupaten Tabalong.',
+                        'Alifah,Adiba dan Alyn',
+                        'https://i.ibb.co.com/Y7h5hS7C/menari.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-quran"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Tingkat Kabupaten
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 2 FLS3N Tari Kelompok
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        Prestasi siswa SD Hasbunallah dalam ajang Festival Lomba Seni dan Sastra tingkat Kabupaten Tabalong.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+                <!-- ========================= -->
+                <!-- PRESTASI 6 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 1 Lomba Adzan',
+                        'Event Nurul Musthofa Islamic Fest',
+                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.',
+                        'Rifqi Zidan Farras',
+                        'https://i.ibb.co.com/Zz2d9Fjf/adzan-NM.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-quran"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Event Nurul Musthofa Islamic Fest
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 1 Lomba Adzan
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+                <!-- ========================= -->
+                <!-- PRESTASI 7 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Juara 3 Lomba Futsal',
+                        'Event Nurul Musthofa Islamic Fest',
+                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.',
+                        'Tim Futsal SD Hasbunallah',
+                        'https://i.ibb.co.com/DDdTGfkG/futsal.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-quran"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Event Nurul Musthofa Islamic Fest
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                        Juara 3 Lomba Futsal
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+                <!-- ========================= -->
+                <!-- PRESTASI 8 -->
+                <!-- ========================= -->
+
+                <div
+                    class="prestasi-card flex-none w-[280px] md:w-[300px]
+                           snap-start
+                           bg-white/10 backdrop-blur-md
+                           rounded-2xl p-6
+                           border border-white/20
+                           hover:bg-white/20
+                           transition-all duration-300
+                           transform hover:-translate-y-2
+                           cursor-pointer"
+                    onclick="openPrestasiModal(
+                        'Harapan 2 Fashion Show',
+                        'Event Nurul Musthofa Islamic Fest',
+                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.',
+                        'Fathiya Khoirunnisa',
+                        'https://i.ibb.co.com/t7gWz6h/fhatiya-fashion-show.jpg'
+                    )">
+
+                    <div class="w-12 h-12 bg-accent-500 rounded-full
+                                flex items-center justify-center
+                                text-white text-xl mb-4
+                                shadow-lg shadow-accent-500/40">
+
+                        <i class="fa-solid fa-quran"></i>
+
+                    </div>
+
+                    <span class="text-brand-200 text-sm font-medium">
+                        Event Nurul Musthofa Islamic Fest
+                    </span>
+
+                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
+                       Harapan 2 Fashion Show
+                    </h3>
+
+                    <p class="text-brand-100 text-sm">
+                        Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.
+                    </p>
+
+                    <div class="mt-5 text-accent-400 text-sm font-semibold">
+                        Lihat detail
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOMBOL KANAN -->
+            <button
+                id="prestasiNext"
+                type="button"
+                class="absolute right-0 top-1/2 -translate-y-1/2 z-20
+                       w-11 h-11 rounded-full
+                       bg-white text-brand-700
+                       shadow-xl
+                       flex items-center justify-center
+                       hover:bg-brand-50
+                       transition
+                       translate-x-1/2">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- PETUNJUK -->
+        <div class="text-center mt-5 text-brand-200 text-sm">
+            <i class="fa-solid fa-arrows-left-right mr-1"></i>
+            Geser untuk melihat prestasi lainnya
+        </div>
+
+    </div>
+</section>
+<!-- ========================= -->
+<!-- MODAL DETAIL PRESTASI -->
+<!-- ========================= -->
+
+<div
+    id="prestasiModal"
+    class="fixed inset-0 z-[9999] hidden items-center justify-center p-4">
+
+    <!-- Background gelap -->
+    <div
+        id="prestasiOverlay"
+        class="absolute inset-0 bg-black/70 backdrop-blur-sm">
+    </div>
+
+
+    <!-- Kotak Modal -->
+    <div
+        class="relative bg-white rounded-3xl
+               w-full max-w-2xl
+               max-h-[90vh]
+               overflow-y-auto
+               shadow-2xl
+               animate-modal">
+
+        <!-- Tombol Close -->
+        <button
+            onclick="closePrestasiModal()"
+            class="absolute right-4 top-4 z-20
+                   w-10 h-10 rounded-full
+                   bg-white/90
+                   shadow-lg
+                   text-slate-700
+                   hover:bg-slate-100
+                   transition">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <!-- FOTO -->
+        <div class="w-full h-72 md:h-96 bg-slate-100 overflow-hidden">
+
+            <img
+                id="modalPrestasiImage"
+                src=""
+                alt="Foto Prestasi Siswa"
+                class="w-full h-full object-cover">
+
+        </div>
+
+
+        <!-- ISI -->
+        <div class="p-6 md:p-8">
+
+            <span
+                id="modalPrestasiLevel"
+                class="inline-flex
+                       bg-brand-100
+                       text-brand-700
+                       px-4 py-2
+                       rounded-full
+                       text-sm
+                       font-semibold">
+
+            </span>
+
+
+            <h2
+                id="modalPrestasiTitle"
+                class="text-2xl md:text-3xl
+                       font-heading
+                       font-bold
+                       text-slate-900
+                       mt-4 mb-3">
+            </h2>
+
+
+            <div class="flex items-center gap-2 text-slate-500 mb-6">
+
+                <i class="fa-solid fa-user-graduate text-brand-600"></i>
+
+                <span id="modalPrestasiStudent"></span>
+
+            </div>
+
+
+            <div class="border-t border-slate-200 pt-5">
+
+                <h3 class="font-bold text-slate-800 mb-3">
+                    Tentang Prestasi
+                </h3>
+
+                <p
+                    id="modalPrestasiDescription"
+                    class="text-slate-600 leading-relaxed">
+                </p>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <div
+                class="mt-6 pt-5
+                       border-t border-slate-200
+                       flex items-center
+                       gap-2 text-brand-600">
+
+                <i class="fa-solid fa-school"></i>
+
+                <span class="font-semibold">
+                    SD Hasbunallah
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+                <!-- DATA KARYAWAN -->
+                </section>
+            <div id="staff-section" class="mt-0 pt-6 border-t border-slate-200 scroll-mt-28">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h4 class="text-brand-600 font-bold uppercase tracking-wider text-sm mb-2">SD Hasbunallah</h4>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Tenaga Pendidik & Kependidikan</h2>
+                    <p class="text-slate-600">Berkenalan lebih dekat dengan pimpinan, guru, dan staf yang berdedikasi tinggi membangun generasi Qur'ani di sekolah kami.</p>
+                </div>
+
+                <!-- Tabs Navigation -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10" id="staffTabs">
+                    <button onclick="renderStaff('pimpinan')" class="staff-tab-btn active px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-brand-600 text-white shadow-lg shadow-brand-600/30">Pimpinan & Staf</button>
+                    <button onclick="renderStaff('guruKelas')" class="staff-tab-btn px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 hover:text-brand-600">Guru Kelas (22)</button>
+                    <button onclick="renderStaff('guruMapel')" class="staff-tab-btn px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 hover:text-brand-600">Guru Mapel (14)</button>
+                    <button onclick="renderStaff('guruUmmi')" class="staff-tab-btn px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 hover:text-brand-600">Guru Ummi (19)</button>
+                    <button onclick="renderStaff('pendukung')" class="staff-tab-btn px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 hover:text-brand-600">Pendukung (3 Paman)</button>
+                </div>
+                
+                <!-- Staff Grid Container -->
+                <div id="staffGrid" class="space-y-6">
+                    <!-- Dynamic content injected by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ========================= -->
+<!-- BERITA & KEGIATAN -->
+<!-- ========================= -->
+        
+    <!-- Berita & Kegiatan Terbaru -->
+    <section id="berita" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="max-w-2xl">
+                    <h4 class="text-brand-600 font-bold uppercase tracking-wider text-sm mb-2">Informasi Publik</h4>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900">Kabar Terbaru Hasbunallah</h2>
+                </div>
+                
+            </div>
+
+           <div class="relative">
+
+    <!-- Tombol kiri -->
+    <button
+        id="beritaPrev"
+        type="button"
+        class="absolute left-0 top-1/2 -translate-y-1/2 z-20
+               w-11 h-11 rounded-full
+               bg-white text-brand-700
+               shadow-xl
+               flex items-center justify-center
+               hover:bg-brand-50 transition
+               -translate-x-1/2">
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+    </button>
+    <!-- ========================= -->
+    <!-- SLIDER BERITA -->
+    <!-- ========================= -->
+
+    <div
+        id="beritaSlider"
+        class="flex gap-8 overflow-x-auto scroll-smooth
+               snap-x snap-mandatory
+               pb-5 px-2
+               scrollbar-hide">
+
+
+        <!-- ========================= -->
+        <!-- BERITA 1 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/XfGpMPpC/imtihan-2.png"
+                    alt="Khatmul Qur'an"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Pendidikan Agama
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    28 April
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2
+                           hover:text-brand-600
+                           cursor-pointer transition-colors">
+
+                    Ratusan Siswa SD Hasbunallah Ikuti Khatmul Qur'an dan Imtihan ke-10
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                    Sebanyak 112 siswa SD Hasbunallah Tabalong mengikuti
+                    Khatmul Qur'an dan Imtihan dengan metode Ummi di
+                    Tanjung Expo Center, mencetak sejarah peserta terbanyak.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita1')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+        <!-- ========================= -->
+        <!-- BERITA 2 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/MxgKgmtS/Whats-App-Image-2026-08-11-at-08-56-45.jpg"
+                    alt="Seminar Agama"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Sekolah
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    17 Juni
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2
+                           hover:text-brand-600
+                           cursor-pointer transition-colors">
+
+                    Perkuat Nilai Spiritual, SD Hasbunallah Gelar Seminar Keagamaan
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                    Siswa kelas 4 dan 5 SD Hasbunallah mengikuti kegiatan
+                    Seminar Keagamaan yang membahas tentang pentingnya
+                    adab dan akhlak dalam kehidupan sehari-hari.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita2')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- ========================= -->
+        <!-- BERITA 3 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/3yCh1NW8/Whats-App-Image-2026-08-11-at-08-55-17.jpg"
+                    alt="Senam Sehat"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kesehatan
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    18 Juni
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2
+                           hover:text-brand-600
+                           cursor-pointer transition-colors">
+
+                    Siswa SD Hasbunallah Laksanakan Senam Sehat Bersama
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                    SD Hasbunallah melaksanakan kegiatan Senam Sehat
+                    Bersama yang diikuti oleh seluruh siswa dan guru
+                    dengan penuh semangat dan antusias.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita3')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- ========================= -->
+        <!-- BERITA 4 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/4RtbXjX5/Whats-App-Image-2026-08-11-at-13-06-34.jpg"
+                    alt="MPLS"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Sekolah
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    13 Juli-17 Juli
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2">
+
+                    Masa Pengenalan Lingkungan Sekolah
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                  Masa Pengenalan Lingkungan Satuan Pendidikan (MPLS) di SD Hasbunallah menjadi kegiatan awal yang menyenangkan bagi siswa dalam mengenal lingkungan sekolah, guru, tenaga kependidikan, serta teman-teman baru.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita4')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- ========================= -->
+        <!-- BERITA 5 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/svvXt8Fw/ekskul-dn-bimbel.jpg"
+                    alt="Ekskul"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Sekolah
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    24 Juli
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2">
+
+                    Kegiatan Ekstrakurikuler Kelas 3-5 dan Bimbel Kelas 6
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                    SD Hasbunallah menyediakan berbagai kegiatan ekstrakurikuler bagi siswa kelas 3, 4, dan 5 sebagai wadah untuk mengembangkan minat, bakat, kreativitas, serta keterampilan siswa di luar kegiatan pembelajaran di kelas.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita5')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+        <!-- ========================= -->
+        <!-- BERITA 6 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/TqRZ9Y49/pramuka.jpg"
+                    alt="Pramuka"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Kepemimpinan
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    31 Juli
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2">
+
+                    Kegiatan Pramuka SD Hasbunallah
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                    Kegiatan Pramuka di SD Hasbunallah menjadi salah satu kegiatan yang bertujuan untuk membentuk karakter siswa melalui pengalaman belajar yang menyenangkan dan penuh kebersamaan.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita6')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+        <!-- ========================= -->
+        <!-- BERITA 7 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/B5CPpDRn/ramah-tamah.jpg"
+                    alt="Ramah Tamah"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Ramah Tamah 
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    31 Juli
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2">
+
+                    Pererat Silaturahmi, SD Hasbunallah Gelar Ramah Tamah Orang Tua Murid Kelas 1
+
+                </h3>
+
+
+                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+
+                    Kegiatan Ramah Tamah Orang Tua Murid Kelas 1 SD Hasbunallah menjadi momen yang hangat untuk mempererat tali silaturahmi antara pihak sekolah dan orang tua siswa.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita7')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- TOMBOL KANAN -->
+    <!-- ========================= -->
+
+    <button
+        id="beritaNext"
+        type="button"
+        class="absolute right-0 top-1/2 -translate-y-1/2 z-20
+               w-11 h-11 rounded-full
+               bg-white text-brand-700
+               shadow-xl
+               flex items-center justify-center
+               hover:bg-brand-50 transition
+               translate-x-1/2">
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </button>
+
+</div>
+
+        <!-- ==============================
+     MODAL BERITA
+================================ -->
+
+<div
+    id="beritaModal"
+    class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+>
+
+    <div
+        class="relative bg-white w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl"
+    >
+
+        <!-- Tombol Close -->
+        <button
+            onclick="closeBerita()"
+            class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white shadow-md text-slate-600 hover:bg-red-500 hover:text-white transition"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- Gambar Berita -->
+        <img
+            id="modalBeritaImage"
+            src=""
+            alt=""
+            class="w-full h-64 object-cover rounded-t-2xl"
+        >
+
+
+        <!-- Isi -->
+        <div class="p-6 md:p-8">
+
+            <!-- Kategori -->
+            <span
+                id="modalBeritaCategory"
+                class="inline-block px-4 py-2 bg-brand-50 text-brand-600 rounded-full text-sm font-semibold mb-4"
+            ></span>
+
+
+            <!-- Tanggal -->
+            <div class="flex items-center gap-2 text-slate-500 text-sm mb-3">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span id="modalBeritaDate"></span>
+
+            </div>
+
+
+            <!-- Judul -->
+            <h2
+                id="modalBeritaTitle"
+                class="text-2xl md:text-3xl font-heading font-bold text-slate-900 mb-5"
+            ></h2>
+
+
+            <!-- Isi berita -->
+            <div
+                id="modalBeritaContent"
+                class="text-slate-600 leading-8 text-base"
+            ></div>
+
+        </div>
+
+    </div>
+
+</div>
+    </section>
+
+    <!-- Kontak & Lokasi -->
+    <section id="kontak" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-brand-600 font-bold uppercase tracking-wider text-sm mb-2">Informasi Pendaftaran & Kontak</h4>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-8">Mari Bergabung Bersama Kami</h2>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-heading font-semibold text-slate-800">Alamat Sekolah</h4>
+                                <p class="text-slate-600 mt-1">Komplek Swadarma Lestari, Kel. Mabuun,<br>Kec. Murung Pudak, Kab. Tabalong,<br>Provinsi Kalimantan Selatan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-heading font-semibold text-slate-800">Telepon / WhatsApp</h4>
+                                <p class="text-slate-600 mt-1">0526-2022635</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl mt-1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-heading font-semibold text-slate-800">Email</h4>
+                                <p class="text-slate-600 mt-1">sdhasbunallah2006@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl mt-1">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h4 class="text-lg font-heading font-semibold text-slate-800">Yayasan Naungan</h4>
+                                <p class="text-slate-600 mt-1">Yayasan Hasbunallah Wani'mal Wakil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fa-solid fa-circle-info text-amber-500"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium text-amber-800">Informasi PPDB</h3>
+                                <div class="mt-2 text-sm text-amber-700">
+                                    <p>Penerimaan Peserta Didik Baru (PPDB) tahun ajaran baru dibuka. Silakan hubungi nomor di atas atau datang langsung ke sekretariat di sekolah.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form / Map -->
+               <!-- KOLOM KANAN -->
+<div class="w-full">
+
+    <!-- Maps -->
+    <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+
+        <iframe
+            src="https://www.google.com/maps?q=-2.179000,115.417200&z=17&output=embed"
+            width="100%"
+            height="280"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+    <!-- Tombol Maps -->
+    <div class="mt-4 flex justify-center">
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=-2.179000,115.417200"
+            target="_blank"
+            class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-colors"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            Buka di Google Maps
+        </a>
+
+    </div>
+<!-- KIRIM PESAN -->
+<div class="bg-white rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-slate-100 mt-8">
+
+    <div class="p-5">
+
+        <h3 class="text-xl font-heading font-bold text-slate-800 mb-4">
+            Kirim Pesan Cepat
+        </h3>
+
+        <form onsubmit="kirimKeWhatsApp(event)">
+
+            <div class="grid grid-cols-1 gap-3">
+
+                <input
+                    id="namaPengirim"
+                    type="text"
+                    placeholder="Nama Lengkap"
+                    required
+                    class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-brand-500"
+                >
+
+                <input
+                    id="nomorPengirim"
+                    type="text"
+                    placeholder="No. HP / WhatsApp"
+                    required
+                    class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-brand-500"
+                >
+
+                <textarea
+                    id="isiPesan"
+                    rows="3"
+                    placeholder="Tulis pesan atau pertanyaan Anda di sini..."
+                    required
+                    class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-brand-500 resize-none"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="w-full bg-brand-600 hover:bg-brand-500 text-white font-semibold py-2.5 px-4 rounded-lg shadow-md transition flex items-center justify-center gap-2"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Kirim Pesan
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>              
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-brand-100 pt-16 pb-8 border-t border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <h3 class="text-white font-heading font-semibold text-lg mb-6">SD Hasbunallah</h3>
+                    <ul class="space-y-3 text-brand-300 text-sm">
+                    <p class="text-brand-200 text-sm leading-relaxed mb-6">
+                        Dari sekolah lah kehidupan bangsa dicerdaskan, dan dari tempat ini pulalah kita bisa menjadi seperti sekarang. Membangun akhlak, cerdas dalam ilmu.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-heading font-semibold text-lg mb-6">Tautan Cepat</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#beranda" class="text-brand-300 hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="#profil" class="text-brand-300 hover:text-white transition-colors">Profil Sekolah</a></li>
+                        <li><a href="#program" class="text-brand-300 hover:text-white transition-colors">Program Unggulan</a></li>
+                        <li><a href="#prestasi" class="text-brand-300 hover:text-white transition-colors">Prestasi Siswa</a></li>
+                        <li><a href="#berita" class="text-brand-300 hover:text-white transition-colors">Berita & Pengumuman</a></li>
+                        <li><a href="#kontak" class="text-brand-300 hover:text-white transition-colors">Kontak Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h3 class="text-white font-heading font-semibold text-lg mb-6">Data Sekolah Kemdikbud</h3>
+                    <ul class="space-y-3 text-brand-300 text-sm">
+                        <li><span class="text-white font-medium w-24 inline-block">NPSN</span> : 30305364</li>
+                        <li><span class="text-white font-medium w-24 inline-block">Bentuk</span> : Sekolah Dasar (SD)</li>
+                        <li><span class="text-white font-medium w-24 inline-block">Status</span> : Swasta</li>
+                        <li><span class="text-white font-medium w-24 inline-block">Naungan</span> : Yayasan HASBUNALLAH WANI'MAL WAKIL</li>
+                        <li><span class="text-white font-medium w-24 inline-block">Akreditasi</span> : A (Berdasarkan BAN-SM)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-brand-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-brand-400 text-center md:text-left">
+                <p>&copy; 2026 SD Hasbunallah Tabalong. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Didesain dengan <i class="fa-solid fa-heart text-red-500 mx-1"></i> untuk Pendidikan Indonesia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Message Box (Replacement for alert) -->
+    <div id="messageBox" class="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full mx-4 transform scale-95 transition-transform duration-300" id="messageBoxContent">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-center text-slate-800 mb-2">Pesan Terkirim!</h3>
+            <p class="text-slate-600 text-center mb-6">Terima kasih telah menghubungi SD Hasbunallah. Kami akan segera merespon pesan Anda melalui nomor HP/Email yang dicantumkan.</p>
+            <button onclick="hideMessageBox()" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar styling on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('bg-white/95', 'bg-white');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.replace('bg-white', 'bg-white/95');
+            }
+        });
+
+        // Custom Message Box Logic
+        const msgBox = document.getElementById('messageBox');
+        const msgBoxContent = document.getElementById('messageBoxContent');
+
+        function showMessageBox() {
+            msgBox.classList.remove('hidden');
+            // Trigger reflow
+            void msgBox.offsetWidth;
+            msgBox.classList.remove('opacity-0');
+            msgBoxContent.classList.remove('scale-95');
+            msgBoxContent.classList.add('scale-100');
+        }
+
+        function hideMessageBox() {
+            msgBox.classList.add('opacity-0');
+            msgBoxContent.classList.remove('scale-100');
+            msgBoxContent.classList.add('scale-95');
+            setTimeout(() => {
+                msgBox.classList.add('hidden');
+            }, 300); // Wait for transition
+        }
+
+        const staffData = {
+    pimpinan: {
+        kepala: {
+            name: "Siti Fatimah, S.E.I.,S.Pd",
+            role: "Kepala Sekolah"
+        },
+
+        lainnya: [
+            {
+                name: "Iis Lailan Sari,S.Pd",
+                role: "Wakil Kepala Sekolah",
+                role: "Wakasek Bidang Kesiswaan",
+                foto: "https://i.ibb.co.com/hJN6R8jc/Bu-IIS.jpg"
+            },
+            {
+                name: "Istihlaliyah,S.Ss.,S.Pd",
+                role: "Wakil Kepala Sekolah",
+                role: "Wakasek Bidang Kurikulum",
+                foto: "https://i.ibb.co.com/d0RQvY8H/Bu-Teteh-removebg-preview.png"
+            },
+            {
+                name: "Endah Feri Prihatin, S.Pd",
+                role: "Wakil Kepala Sekolah",
+                role: "Wakasek Bidang Sarana & Prasarana",
+                foto: "https://i.ibb.co.com/7tcZH9bH/Bu-Endah.jpg"
+            },
+            {
+                name: "Lina Hidayati",
+                role: "Kepala Tata Usaha",
+                foto: "https://i.ibb.co.com/csmcH6Z/Bu-Lina-removebg-preview.png"
+            },
+            {
+                name: "Kamaliyah,S.S.T.Ars",
+                role: "Bendahara",
+                foto: "https://i.ibb.co.com/XxSX0Bm1/bu-kamal-removebg-preview.png"
+            },
+            {
+                name: "Indah Anggie Ashari,S.Kom",
+                role: "Operator Sekolah",
+                foto: "https://i.ibb.co.com/cSpzJbwt/Indah-removebg-preview.png"
+            },
+            {
+                name: "Wiwin Rumiati",
+                role: "Kepala Perpustakaan",
+                foto: "https://i.ibb.co.com/23GgBpbd/Bu-Wiwin-removebg-preview.png"
+            }
+        ]
+    },
+
+    guruKelas: [
+        {
+            name:"Dwinita Novitasari",
+            role:"Wali Kelas 1A",
+            foto:"https://i.ibb.co.com/8L9Lrt6m/Bu-Nita.jpg"
+        },
+        {
+            name:"Nida Rusyda,S.Pd",
+            role:"Wali Kelas 1B",
+            foto:"https://i.ibb.co.com/gM3td271/Bu-Nida.jpg"
+        },
+        {
+            name:"Rahmah,S.Pd",
+            role:"Wali Kelas 1C",
+            foto:"https://i.ibb.co.com/7xTFBy18/Bu-Rahmah.jpg"
+        },
+        {
+            name:"Kiki Nur Ayni,S.Pd",
+            role:"Wali Kelas 1D",
+            foto:"https://i.ibb.co.com/WWw2kk8k/Bu-Kiki.jpg"
+        },
+        {
+            name:"Linda Rahmawati,A.Ma",
+            role:"Wali Kelas 2A",
+            foto:"https://i.ibb.co.com/TDgFS1LM/Bu-Linda.jpg"
+        },
+        {
+            name:"Antung Diah Fitriani,S.Pd",
+            role:"Wali Kelas 2B",
+            foto:"https://i.ibb.co.com/pvKnq5TZ/Bu-Antung.jpg"
+        },
+        {
+            name:"Istihlaliyah,S.Ss.,S.Pd",
+            role:"Wali Kelas 2C",
+            foto:"https://i.ibb.co.com/MvFWm8B/Bu-Teteh-removebg-preview.png"
+        },
+        {
+            name:"Tutut Pratiwi,S.Pd",
+            role:"Wali Kelas 2D",
+            foto:"https://i.ibb.co.com/TxKxCpfy/Bu-Tutut.jpg"
+        },
+        {
+            name:"Ahmad Suriyani,S.Pd",
+            role:"Wali Kelas 3A",
+            foto:"https://i.ibb.co.com/0RwPCL8q/Pak-Surya.jpg"
+        },
+        {
+            name:"Eli Arisanti,S.Pd",
+            role:"Wali Kelas 3B",
+            foto:"https://i.ibb.co.com/DfQGjhTf/Bu-Eli.jpg"
+        },
+        {
+            name:"Nor Aulia,S.Pd",
+            role:"Wali Kelas 3C",
+            foto:"https://i.ibb.co.com/bRFF7stG/Nor-Aulia-S-Pd-JPG-removebg-preview.png"
+        },
+        {
+            name:"Lianoor Munawarah,S.Pd",
+            role:"Wali Kelas 3D",
+            foto:"https://i.ibb.co.com/k2nh0WrG/Bu-Lia.jpg"
+        },
+        {
+            name:"Ikhsan Wahyudinoor,S.Pd.,M.M",
+            role:"Wali Kelas 4A",
+            foto:"https://i.ibb.co.com/hRTKBwnx/Chat-GPT-Image-16-Jul-2026-10-41-23.png"
+        },
+        {
+            name:"Dina Fauziah,S.Pd",
+            role:"Wali Kelas 4B",
+            foto:"https://i.ibb.co.com/GQLd80j3/Bu-Dina.jpg"
+        },
+        {
+            name:"Ratna Mei Linawati,S.Pd",
+            role:"Wali Kelas 4C",
+            foto:"https://i.ibb.co.com/xKM1bvr6/Bu-Ratna.jpg"
+        },
+        {
+            name:"Ariani Makfira,S.Pd",
+            role:"Wali Kelas 4D",
+            foto:"https://i.ibb.co.com/pjHLsN6T/Bu-Ariani.jpg"
+        },
+        {
+            name:"Rika Ratna Sari,S.Pd",
+            role:"Wali Kelas 5A",
+            foto:"https://i.ibb.co.com/0RRTv3Yp/Bu-Rika.jpg"
+        },
+        {
+            name:"Enny Lestiyana,S.Si",
+            role:"Wali Kelas 5B",
+            foto:"https://i.ibb.co.com/H5TF6X3/Bu-Enny.jpg"
+        },
+        {
+            name:"Rafika,S.Pd",
+            role:"Wali Kelas 6A",
+            foto:"https://i.ibb.co.com/ZRG5V1wg/Bu-Rafika.jpg"
+        },
+        {
+            name:"Masitah Purbawati,S.Pd",
+            role:"Wali Kelas 6B",
+            foto:"https://i.ibb.co.com/pB6LgzrH/Bu-SItah.png"
+        },
+        {
+            name:"Endah Feri Prihatin,S.Pd",
+            role:"Wali Kelas 6C",
+            foto:"https://i.ibb.co.com/5xJwjz90/Bu-Endah.jpg"
+        },
+         {
+            name:"Iis Lailan Sari,S.Pd",
+            role:"Wali Kelas 6D",
+            foto:"https://i.ibb.co.com/tPsKbBCY/Bu-IIS.jpg"
+        }
+    ],
+
+    guruMapel:[
+        {
+            name:"Ahmad Badali,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/KcMLR95Z/Pak-A-Badali.jpg"
+        },
+        {
+            name:"Ahmad Rafi'i,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/CKxqJHkN/Pak-Rafii.jpg"
+        },
+        {
+            name:"Muhammad Ridha,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/M59tFmCV/Pak-Ridho.jpg"
+        },
+        {
+            name:"Faradha Alfitri,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/7J6jZ0t3/Bu-Faradha.jpg"
+        },
+        {
+            name:"Siti Fauziah,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/XxqL8CCS/bu-zia.jpg"
+        },
+        {
+            name:"Siti Dalimah,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/prRJ1g2p/Chat-GPT-Image-10-Agu-2026-14-04-39.png"
+        },
+        {
+            name:"Andini Kaniawati,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/Pzc03mW5/Bu-Andin.jpg"
+        },
+        {
+            name:"Halimatus Sa'diah,S.Pd",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/5X7Y2BXM/Bu-Halimah.jpg"
+        },
+        {
+            name:"Rabiatul Adawiah,S.Sos",
+            role:"Guru Agama Islam",
+            foto:"https://i.ibb.co.com/Mxdn8X97/Bu-Rabi.jpg"
+        },
+        {
+            name:"Reni Herlina,S.Pd",
+            role:"Guru B.Inggris",
+            foto:"https://i.ibb.co.com/GvNJ6M0q/Bu-Reni.jpg"
+        },
+        {
+            name:"Dian Fransiska,S.Si",
+            role:"Guru Komputer",
+            foto:"https://i.ibb.co.com/5xTCG8GV/Chat-GPT-Image-10-Agu-2026-14-19-35.png"
+        },
+        {
+            name:"Dina Faurida Wati,S.Pd",
+            role:"Guru B.Banjar",
+            foto:"https://i.ibb.co.com/k255rkkV/Bu-Dina-Cantik.jpg"
+        },
+        {
+            name:"Nurfa Fuspitasari,S.Pd",
+            role:"Guru PJOK",
+            foto:"https://i.ibb.co.com/1GKNhp48/Bu-Nurfa.jpg"
+        },
+        {
+            name:"Syahriza Maulana,S.E",
+            role:"Guru PJOK",
+            foto:"https://i.ibb.co.com/V0qcS4Gc/Chat-GPT-Image-10-Agu-2026-13-15-38.png"
+        }
+    ],
+
+    guruUmmi:[
+        {
+            name:"Syarifuddin",
+            role:"Koordinator Ummi",
+            foto:"https://i.ibb.co.com/V0vmfQHj/Ust-Syarif.jpg"
+        },
+        {
+            name:"Hariyadi,S.Pd",
+            role:"Wakil Koordinator Ummi",
+            foto:"https://i.ibb.co.com/GvgJFpc0/Ust-Hariadi-removebg-preview.jpg"
+        },
+        {
+            name:"Muhammad Fuad Busairi,S.Pd.I",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/S4D6bQz0/ust-Fuad.jpg"
+        },
+        {
+            name:"Muhammad Hairul Basar,S.Ag",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/s9SMhQsj/Ust-Basar-removebg-preview.jpg"
+        },
+        {
+            name:"Ammarullah",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/8Djv02WS/Ust-Kevin-removebg-preview.jpg"
+        },
+        {
+            name:"Muhammad Noor Jaya,S.Pd",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/Y4xJ1TJL/Pak-Jaya-removebg-preview.png"
+        },
+        {
+            name:"Arliana Nurul Hidayati",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/dwVw4WT5/Bu-Arli-removebg-preview.png"
+        },
+        {
+            name:"Mona Al Yughna,S.Ag",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/bRqL866R/Bu-mona.jpg"
+        },
+        {
+            name:"Nor Rochmah",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/5g7hKXzb/Mba-Rochmah.jpg"
+        },
+        {
+            name:"Siti Laily Medina",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/7tHPmr5H/Lili.jpg"
+        },
+        {
+            name:"Nur Fitriana Salsabila",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/YTdWbVbr/Salsa-removebg-preview.jpg"
+        },
+        {
+            name:"Maelina Nurul Safitri",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/vCnbjcPG/Meilina-removebg-preview.png"
+        },
+        {
+            name:"Ulil Rohmatil Azizah",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/8g6r67q3/Ibu-Ulil-removebg-preview.png"
+        },
+        {
+            name:"Jamiyatun Nisa,S.H.,M.H",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/G388rxzq/Jamiyatun-removebg-preview.png"
+        },
+        {
+            name:"Rizqa Maulida,S.H.,M.H",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/q3Kk2kgP/Bu-rizqa.jpg"
+        },
+        {
+            name:"Rina Muslihah",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/qLqJG9xH/Screenshot-2026-08-10-150435-removebg-preview.png"
+        },
+        {
+            name:"Eka Norhayati,S.Pd",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/qY6hg0DL/Bu-Eka.jpg"
+        },
+        {
+            name:"Raudatul Islamiah",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/G388rxzq/Jamiyatun-removebg-preview.png"
+        }
+        
+    ],
+
+    pendukung:[
+        {
+            name:"Muhammad Abdul Hadi",
+            role:"Petugas Kebersihan",
+            foto:"https://i.ibb.co.com/xqF0DZgc/Paman-Hadi-removebg-preview.png"
+        },
+        {
+            name:"Abdul Wahid",
+            role:"Petugas Kebersihan",
+            foto:"https://i.ibb.co.com/VYkkPnN5/Abah-Lia-removebg-preview.png"
+        },
+        {
+            name:"Hafiz Ramadhani",
+            role:"Petugas Kebersihan",
+            foto:"https://i.ibb.co.com/M59WhmDR/Paman-Hafiz.jpg"
+        }
+    ]
+};
+
+        function renderStaff(category) {
+            const container = document.getElementById('staffGrid');
+            const tabs = document.querySelectorAll('.staff-tab-btn');
+            
+            // Update Active Tab Styling
+            tabs.forEach(tab => {
+                if(tab.getAttribute('onclick').includes(category)) {
+                    tab.className = 'staff-tab-btn active px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-brand-600 text-white shadow-lg shadow-brand-600/30';
+                } else {
+                    tab.className = 'staff-tab-btn px-6 py-2.5 rounded-full font-semibold text-sm transition-all bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 hover:text-brand-600';
+                }
+            });
+
+            // Clear container
+            container.innerHTML = '';
+
+            if (category === 'pimpinan') {
+                // Render Kepala Sekolah Terpisah di Atas
+                const ks = staffData.pimpinan.kepala;
+                const ksDiv = document.createElement('div');
+                ksDiv.className = 'flex justify-center mb-8 fade-in-up';
+                ksDiv.innerHTML = `
+                    <div class="bg-white border-2 border-brand-500 rounded-2xl p-6 text-center shadow-xl w-full max-w-xs transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto mb-4">
+                            <img src="https://i.ibb.co.com/d4GfY0gC/Bu-Fatim.jpg" alt="Kepala Sekolah" class="w-full h-full object-cover" style="object-position: center 20%;">
+                        </div>
+                        <h4 class="font-heading font-bold text-slate-900 text-lg mb-1">${ks.name}</h4>
+                        <p class="text-sm text-brand-600 font-semibold uppercase tracking-wider">${ks.role}</p>
+                    </div>
+                `;
+                container.appendChild(ksDiv);
+
+                // Render Grid untuk Wakil Kepala Sekolah dan Staf Lainnya
+                const gridDiv = document.createElement('div');
+                gridDiv.className = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6';
+                
+                staffData.pimpinan.lainnya.forEach((staff, index) => {
+                    const delay = (index % 10) * 50; 
+                    const card = document.createElement('div');
+                    card.className = `bg-white border border-slate-100 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl hover:border-brand-300 transition-all duration-300 transform hover:-translate-y-1 fade-in-up`;
+                    card.style.animationDelay = `${delay}ms`;
+                    
+                    card.innerHTML = `
+<div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-slate-200 shadow mb-4">
+
+<img
+src="${staff.foto}"
+alt="${staff.name}"
+class="w-full h-full object-cover"
+style="object-position:center 20%;"
+onerror="this.src='https://placehold.co/200x200?text=Foto';">
+
+</div>
+
+<h4 class="font-heading font-semibold text-slate-800 text-sm mb-1">
+${staff.name}
+</h4>
+
+<p class="text-xs text-brand-600 font-medium">
+${staff.role}
+</p>
+`;
+
+gridDiv.appendChild(card);
+                });
+                container.appendChild(gridDiv);
+
+            } else {
+                // Render untuk kategori lainnya (Guru Kelas, Mapel, Ummi, Pendukung) dalam bentuk Grid biasa
+                const gridDiv = document.createElement('div');
+                gridDiv.className = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6';
+
+                staffData[category].forEach((staff, index) => {
+                    const delay = (index % 10) * 50; 
+                    const card = document.createElement('div');
+                    card.className = `bg-white border border-slate-100 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl hover:border-brand-300 transition-all duration-300 transform hover:-translate-y-1 fade-in-up`;
+                    card.style.animationDelay = `${delay}ms`;
+                    
+                    card.innerHTML = `
+<div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-slate-200 shadow mb-4">
+
+<img
+src="${staff.foto}"
+alt="${staff.name}"
+class="w-full h-full object-cover"
+style="object-position:center 20%;"
+onerror="this.src='https://placehold.co/200x200?text=Foto';">
+
+</div>
+
+<h4 class="font-heading font-semibold text-slate-800 text-sm mb-1">
+${staff.name}
+</h4>
+
+<p class="text-xs text-brand-600 font-medium">
+${staff.role}
+</p>
+`;
+                    gridDiv.appendChild(card);
+                });
+                container.appendChild(gridDiv);
+            }
+        }
+
+        // Jalankan render awal saat website selesai dimuat
+        renderStaff('pimpinan');
+        const dataBerita = {
+
+    berita1: {
+
+        category: "Pendidikan Agama",
+
+        date: "28 April 2026",
+
+        title: "Ratusan Siswa SD Hasbunallah Ikuti Khatmul Qur'an",
+
+        image: "https://i.ibb.co.com/tMcDSzVS/ummi2.jpg",
+
+        content: `
+            <p class="mb-4">
+                Sebanyak 112 siswa SD Hasbunallah Tabalong
+                mengikuti kegiatan Khatmul Qur'an sebagai bagian
+                dari program pendidikan agama di sekolah.
+            </p>
+
+            <p class="mb-4">
+                Kegiatan ini dilaksanakan sebagai bentuk pembinaan
+                keagamaan sekaligus untuk meningkatkan kemampuan
+                siswa dalam membaca dan memahami Al-Qur'an.
+            </p>
+
+            <p>
+                Seluruh siswa mengikuti kegiatan dengan penuh
+                antusias. Sekolah berharap kegiatan ini dapat
+                membentuk generasi yang Qur'ani, berakhlak mulia,
+                dan memiliki kecintaan terhadap Al-Qur'an.
+            </p>
+        `
+    },
+
+
+    berita2: {
+
+        category: "Kegiatan Sekolah",
+
+        date: "17 Juni 2026",
+
+        title: "Perkuat Nilai Spiritual, SD Hasbunallah Gelar Seminar Keagamaan",
+
+        image: "https://i.ibb.co.com/zH8zX7WK/snapedit-1786411474181.jpg",
+
+        content: `
+            <p class="mb-4">
+                Siswa kelas 4 dan 5 SD Hasbunallah mengikuti kegiatan Seminar Keagamaan 
+                yang membahas tentang pentingnya adab dan akhlak dalam kehidupan sehari-hari. 
+                Kegiatan ini menjadi salah satu upaya sekolah dalam memberikan pembinaan 
+                karakter dan menanamkan nilai-nilai keislaman kepada peserta didik sejak dini.
+            </p>
+
+            <p class="mb-4">
+                Dalam seminar tersebut, siswa mendapatkan pemahaman mengenai cara berperilaku 
+                yang baik, menghormati orang tua dan guru, menghargai teman, serta menjaga 
+                tutur kata dan sikap dalam pergaulan. Siswa juga diajak untuk memahami 
+                batasan-batasan dalam pergaulan serta pentingnya memilih lingkungan dan teman 
+                yang dapat memberikan pengaruh positif.
+            </p>
+
+            <p>
+                Kegiatan berlangsung dengan penuh antusias dan interaktif. Melalui seminar ini, 
+                diharapkan siswa kelas 4 dan 5 SD Hasbunallah dapat menerapkan ilmu yang 
+                diperoleh dalam kehidupan sehari-hari, sehingga tumbuh menjadi generasi yang cerdas,
+                berakhlak mulia, santun dalam pergaulan, dan memiliki karakter yang sesuai dengan 
+                nilai-nilai Islam.
+            </p>
+        `
+    },
+
+
+    berita3: {
+
+        category: "Kesehatan",
+
+        date: "18 Juni 2026",
+
+        title: "Siswa SD Hasbunallah Laksanakan Senam Sehat Bersama",
+
+        image: "https://i.ibb.co.com/hxmFZKzW/senam-sehat.jpg",
+
+        content: `
+            <p class="mb-4">
+                SD Hasbunallah melaksanakan kegiatan Senam Sehat Bersama 
+                yang diikuti oleh seluruh siswa dan guru dengan penuh semangat dan antusias. 
+                Kegiatan ini menjadi salah satu upaya sekolah dalam membiasakan pola hidup sehat 
+                sekaligus meningkatkan kebugaran jasmani para siswa.
+            </p>
+
+            <p class="mb-4">
+                Dengan mengikuti senam bersama, siswa diajak untuk aktif bergerak, 
+                menjaga kesehatan tubuh, serta membangun kebiasaan hidup sehat sejak dini. 
+                Suasana kegiatan berlangsung ceria dan penuh kebersamaan, sehingga tidak 
+                hanya memberikan manfaat bagi kesehatan fisik, tetapi juga mempererat hubungan 
+                antara siswa dan guru.
+            </p>
+
+            <p>
+                Melalui kegiatan senam sehat ini, SD Hasbunallah berharap seluruh warga sekolah 
+                semakin menyadari pentingnya menjaga kesehatan dan menerapkan pola hidup sehat
+                dalam kehidupan sehari-hari.
+            </p>
+        `
+    },
+    berita4: {
+
+        category: "Kegiatan Sekolah",
+
+        date: "13 Juli-17 Juli 2026",
+
+        title: "Masa Pengenalan Lingkungan Sekolah",
+
+        image: "https://i.ibb.co.com/4RtbXjX5/Whats-App-Image-2026-08-11-at-13-06-34.jpg",
+
+        content: `
+            <p class="mb-4">
+                Masa Pengenalan Lingkungan Satuan Pendidikan (MPLS) di SD Hasbunallah menjadi kegiatan 
+                awal yang menyenangkan bagi siswa dalam mengenal lingkungan sekolah, guru, 
+                tenaga kependidikan, serta teman-teman baru. Kegiatan ini dirancang untuk membantu siswa
+                 beradaptasi dengan suasana sekolah dan menumbuhkan rasa nyaman serta semangat dalam 
+                 mengikuti pembelajaran.
+            </p>
+
+            <p class="mb-4">
+                Dalam kegiatan MPLS, siswa diperkenalkan dengan berbagai aturan dan budaya positif 
+                yang diterapkan di SD Hasbunallah. Selain itu, siswa juga mengikuti berbagai kegiatan
+                edukatif, permainan, pembiasaan keagamaan, serta aktivitas yang membangun rasa percaya 
+                diri, kedisiplinan, tanggung jawab, dan kebersamaan.
+            </p>
+
+            <p>
+                Melalui MPLS, SD Hasbunallah berharap setiap siswa dapat memulai perjalanan pendidikan 
+                dengan penuh semangat, ceria, dan percaya diri. Kegiatan ini juga menjadi langkah awal 
+                dalam membangun karakter siswa yang berakhlak mulia, mencintai Al-Qur'an, serta mampu 
+                tumbuh menjadi generasi yang berilmu, mandiri, dan berprestasi.
+            </p>
+        `
+    },
+    berita5: {
+
+        category: "Kegiatan Sekolah",
+
+        date: "24 Juli 2026",
+
+        title: "Ekstrakurikuler & Bimbingan Belajar SD Hasbunallah",
+
+        image: "https://i.ibb.co.com/svvXt8Fw/ekskul-dn-bimbel.jpg",
+
+        content: `
+            <p class="mb-4">
+                SD Hasbunallah menyediakan berbagai kegiatan ekstrakurikuler bagi siswa kelas 3, 4, dan 5 
+                sebagai wadah untuk mengembangkan minat, bakat, kreativitas, serta keterampilan siswa di 
+                luar kegiatan pembelajaran di kelas. Melalui kegiatan yang menyenangkan dan edukatif, 
+                siswa diberikan kesempatan untuk belajar bekerja sama, meningkatkan kepercayaan diri, 
+                serta mengembangkan potensi sesuai dengan minat masing-masing.
+            </p>
+
+            <p class="mb-4">
+                Selain kegiatan ekstrakurikuler, siswa kelas 6 mendapatkan program Bimbingan Belajar (Bimbel) 
+                sebagai bentuk persiapan menghadapi pembelajaran dan evaluasi di jenjang akhir sekolah dasar. 
+                Kegiatan bimbingan dilaksanakan secara terarah dengan memberikan pendalaman materi, latihan soal, 
+                serta pembahasan materi yang dianggap penting agar siswa semakin memahami pelajaran.
+            </p>
+
+            <p>
+                Melalui perpaduan kegiatan ekstrakurikuler dan bimbingan belajar, SD Hasbunallah berupaya 
+                memberikan pendidikan yang seimbang antara pengembangan karakter, keterampilan, minat, 
+                dan kemampuan akademik. Dengan pendampingan dari para guru, diharapkan siswa dapat tumbuh 
+                menjadi pribadi yang aktif, percaya diri, berprestasi, dan memiliki bekal yang kuat untuk 
+                melanjutkan pendidikan ke jenjang berikutnya.
+            </p>
+        `
+    },
+   berita6: {
+
+        category: "Kegiatan Kepemimpinan",
+
+        date: "31 Juli 2026",
+
+        title: "Kegiatan Pramuka SD Hasbunallah",
+
+        image: "https://i.ibb.co.com/8gs0tJ17/bendera.jpg",
+
+        content: `
+            <p class="mb-4">
+                Kegiatan Pramuka di SD Hasbunallah menjadi salah satu kegiatan yang bertujuan untuk membentuk 
+                karakter siswa melalui pengalaman belajar yang menyenangkan dan penuh kebersamaan. 
+                Melalui kegiatan ini, siswa diajak untuk mengenal nilai-nilai kedisiplinan, kemandirian, 
+                tanggung jawab, serta kepedulian terhadap sesama dan lingkungan.
+            </p>
+
+            <p class="mb-4">
+                Dalam kegiatan Pramuka, siswa mengikuti berbagai aktivitas seperti latihan baris-berbaris, 
+                permainan kelompok, keterampilan kepramukaan, kegiatan di alam terbuka, serta berbagai 
+                aktivitas yang melatih kerja sama dan keberanian. Setiap kegiatan dirancang agar siswa 
+                dapat belajar secara langsung sekaligus mengembangkan kemampuan sosial dan kepemimpinan 
+                mereka.
+            </p>
+
+            <p>
+                Melalui kegiatan Pramuka, SD Hasbunallah berupaya menanamkan nilai-nilai positif sejak dini 
+                agar siswa tumbuh menjadi pribadi yang mandiri, disiplin, tangguh, dan memiliki jiwa 
+                kepemimpinan. Dengan semangat kebersamaan dan gotong royong, kegiatan Pramuka diharapkan 
+                dapat menjadi pengalaman berharga bagi siswa dalam mempersiapkan diri menghadapi tantangan 
+                di masa depan.
+            </p>
+        `
+    }, 
+    berita7: {
+
+        category: "Kegiatan Ramah Tamah",
+
+        date: "31 Juli 2026",
+
+        title: "Pererat Silaturahmi, SD Hasbunallah Gelar Ramah Tamah Orang Tua Murid Kelas 1",
+
+        image: "https://i.ibb.co.com/B5CPpDRn/ramah-tamah.jpg",
+
+        content: `
+            <p class="mb-4">
+                Kegiatan Ramah Tamah Orang Tua Murid Kelas 1 SD Hasbunallah menjadi momen yang hangat 
+                untuk mempererat tali silaturahmi antara pihak sekolah dan orang tua siswa. Kegiatan 
+                ini dilaksanakan sebagai bentuk penyambutan dan pengenalan bagi orang tua yang anaknya 
+                mulai memasuki lingkungan pendidikan di SD Hasbunallah.
+            </p>
+
+            <p class="mb-4">
+                Dalam suasana penuh keakraban, orang tua murid berkesempatan untuk mengenal lebih dekat 
+                para guru, tenaga kependidikan, serta lingkungan sekolah. Kegiatan ini juga menjadi ruang 
+                untuk menyampaikan berbagai informasi mengenai program sekolah, pembiasaan siswa,
+                tata tertib, serta hal-hal yang perlu diperhatikan bersama dalam mendampingi anak selama 
+                menjalani proses pendidikan.
+            </p>
+
+            <p>
+                Melalui kegiatan ramah tamah ini, SD Hasbunallah berharap dapat membangun komunikasi dan 
+                kerja sama yang baik antara sekolah dan orang tua. Sinergi yang terjalin diharapkan mampu 
+                menciptakan lingkungan pendidikan yang nyaman, harmonis, dan mendukung tumbuh kembang 
+                siswa kelas 1 agar mereka dapat belajar dengan penuh semangat serta berkembang menjadi generasi yang berakhlak dan berprestasi.
+            </p>
+        `
+    },    
+
+};
+function openBerita(id) {
+
+    const berita = dataBerita[id];
+
+    if (!berita) return;
+
+
+    // Isi modal
+
+    document.getElementById("modalBeritaCategory").textContent =
+        berita.category;
+
+    document.getElementById("modalBeritaDate").textContent =
+        berita.date;
+
+    document.getElementById("modalBeritaTitle").textContent =
+        berita.title;
+
+    document.getElementById("modalBeritaImage").src =
+        berita.image;
+
+    document.getElementById("modalBeritaImage").alt =
+        berita.title;
+
+    document.getElementById("modalBeritaContent").innerHTML =
+        berita.content;
+
+
+    // Tampilkan modal
+
+    const modal =
+        document.getElementById("beritaModal");
+
+    modal.classList.remove("hidden");
+
+    modal.classList.add("flex");
+
+
+    // Kunci scroll halaman belakang
+
+    document.body.style.overflow = "hidden";
+}
+function closeBerita() {
+
+    const modal =
+        document.getElementById("beritaModal");
+
+    modal.classList.add("hidden");
+
+    modal.classList.remove("flex");
+
+    document.body.style.overflow = "";
+}
+document.getElementById("beritaModal").addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === this) {
+            closeBerita();
+        }
+
+    }
+);
+function kirimKeWhatsApp(event) {
+
+    event.preventDefault();
+
+    // Ambil data dari form
+    const nama = document.getElementById("namaPengirim").value;
+    const nomor = document.getElementById("nomorPengirim").value;
+    const pesan = document.getElementById("isiPesan").value;
+
+    // NOMOR WHATSAPP SD HASBUNALLAH
+    // GANTI DENGAN NOMOR WHATSAPP SEKOLAH
+    const nomorSekolah = "62882020246692";
+
+    // Susunan pesan WhatsApp
+    const pesanWhatsApp = 
+`Assalamu'alaikum SD Hasbunallah.
+
+Nama: ${nama}
+No. HP / WhatsApp: ${nomor}
+
+Pesan:
+${pesan}
+
+Terima kasih.`;
+
+    // Membuat URL WhatsApp
+    const url = 
+        "https://wa.me/" + 
+        nomorSekolah + 
+        "?text=" + 
+        encodeURIComponent(pesanWhatsApp);
+
+    // Membuka WhatsApp
+    window.open(url, "_blank");
+}
+
+// =====================================
+// SLIDER PRESTASI
+// =====================================
+
+const prestasiSlider = document.getElementById("prestasiSlider");
+const prestasiPrev = document.getElementById("prestasiPrev");
+const prestasiNext = document.getElementById("prestasiNext");
+
+prestasiNext.addEventListener("click", function () {
+
+    prestasiSlider.scrollBy({
+        left: 330,
+        behavior: "smooth"
+    });
+
+});
+
+
+prestasiPrev.addEventListener("click", function () {
+
+    prestasiSlider.scrollBy({
+        left: -330,
+        behavior: "smooth"
+    });
+
+});
+
+
+// =====================================
+// MODAL PRESTASI
+// =====================================
+
+const prestasiModal = document.getElementById("prestasiModal");
+const prestasiOverlay = document.getElementById("prestasiOverlay");
+
+const modalPrestasiImage =
+    document.getElementById("modalPrestasiImage");
+
+const modalPrestasiTitle =
+    document.getElementById("modalPrestasiTitle");
+
+const modalPrestasiLevel =
+    document.getElementById("modalPrestasiLevel");
+
+const modalPrestasiStudent =
+    document.getElementById("modalPrestasiStudent");
+
+const modalPrestasiDescription =
+    document.getElementById("modalPrestasiDescription");
+
+
+// BUKA MODAL
+
+function openPrestasiModal(
+    title,
+    level,
+    description,
+    student,
+    image
+) {
+
+    modalPrestasiTitle.textContent = title;
+
+    modalPrestasiLevel.textContent = level;
+
+    modalPrestasiStudent.textContent = student;
+
+    modalPrestasiDescription.textContent = description;
+
+    modalPrestasiImage.src = image;
+
+    prestasiModal.classList.remove("hidden");
+
+    prestasiModal.classList.add("flex");
+
+    document.body.classList.add("overflow-hidden");
+
+}
+
+
+// TUTUP MODAL
+
+function closePrestasiModal() {
+
+    prestasiModal.classList.add("hidden");
+
+    prestasiModal.classList.remove("flex");
+
+    document.body.classList.remove("overflow-hidden");
+
+}
+
+
+// KLIK BACKGROUND
+
+prestasiOverlay.addEventListener("click", function () {
+
+    closePrestasiModal();
+
+});
+
+
+// TOMBOL ESC
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+
+        closePrestasiModal();
+
+    }
+
+});
+// =====================================
+// NAVIGASI SLIDER BERITA
+// =====================================
+
+const beritaSlider = document.getElementById("beritaSlider");
+const beritaPrev = document.getElementById("beritaPrev");
+const beritaNext = document.getElementById("beritaNext");
+
+if (beritaSlider && beritaPrev && beritaNext) {
+
+    // Tombol KANAN
+    beritaNext.addEventListener("click", function () {
+
+        beritaSlider.scrollBy({
+            left: beritaSlider.clientWidth,
+            behavior: "smooth"
+        });
+
+    });
+
+
+    // Tombol KIRI
+    beritaPrev.addEventListener("click", function () {
+
+        beritaSlider.scrollBy({
+            left: -beritaSlider.clientWidth,
+            behavior: "smooth"
+        });
+
+    });
+
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tombolBuka = document.getElementById("btnMulaiJelajahi");
+    const tombolTutup = document.getElementById("btnCloseKegiatan");
+    const modal = document.getElementById("kegiatanModal");
+
+
+    // BUKA POPUP
+    if (tombolBuka) {
+
+        tombolBuka.addEventListener("click", function () {
+
+            modal.classList.remove("hidden");
+
+            document.body.classList.add("overflow-hidden");
+
+        });
+
+    }
+
+
+    // TUTUP POPUP
+    if (tombolTutup) {
+
+        tombolTutup.addEventListener("click", function () {
+
+            modal.classList.add("hidden");
+
+            document.body.classList.remove("overflow-hidden");
+
+        });
+
+    }
+
+
+    // KLIK AREA GELAP
+    if (modal) {
+
+        modal.addEventListener("click", function (e) {
+
+            if (e.target === modal) {
+
+                modal.classList.add("hidden");
+
+                document.body.classList.remove("overflow-hidden");
+
+            }
+
+        });
+
+    }
+
+
+    // TUTUP DENGAN ESC
+    document.addEventListener("keydown", function (e) {
+
+        if (e.key === "Escape") {
+
+            modal.classList.add("hidden");
+
+            document.body.classList.remove("overflow-hidden");
+
+        }
+
+    });
+
+});
+
+    </script>
+</body>
+</html>
