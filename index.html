@@ -1547,9 +1547,11 @@
      * angka pagination tidak diperlukan.
      */
 
-    .prestasi-pagination {
-        display: none;
+    @media (max-width: 768px) {
+    .pagination {
+        display: flex;
     }
+}
 
 }
 .prestasi-detail {
@@ -4401,7 +4403,7 @@
                             </div>
                             <div class="ml-5">
                                 <h4 class="text-lg font-heading font-semibold text-slate-800">Telepon / WhatsApp</h4>
-                                <p class="text-slate-600 mt-1">+62 822-1372-</p>
+                                <p class="text-slate-600 mt-1">+62 822-1372-6403</p>
                             </div>
                         </div>
                         <div class="flex items-start">
