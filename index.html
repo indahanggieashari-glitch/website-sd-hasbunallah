@@ -270,6 +270,8 @@
     line-height: 1.8;
 
     margin: 0 0 18px;
+
+    text-align: justify;
 }
 
 
@@ -409,6 +411,7 @@
     width: 90%;
     max-width: 1250px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 
@@ -629,6 +632,8 @@
     line-height: 1.8;
 
     font-style: italic;
+
+    text-align: justify;
 }
 
 
@@ -706,6 +711,8 @@
     font-weight: bold;
 
     margin-top: 1px;
+
+    text-align: justify;
 }
 
 
@@ -814,19 +821,8 @@
     .mission-list li {
         font-size: 14px;
     }
-    /* =====================================
-   SLIDER PRESTASI
-===================================== */
-
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    
 }
-
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
 
 /* =====================================
    ANIMASI MODAL
@@ -851,21 +847,1511 @@
 }
 
 
-/* =====================================
-   CARD PRESTASI
-===================================== */
+/* =========================================================
+   PRESTASI
+========================================================= */
+
+.prestasi-section {
+    padding: 90px 20px 80px;
+    background: #005b49;
+}
+
+.prestasi-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.prestasi-header {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.prestasi-eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #ffb000;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.prestasi-header h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.prestasi-header p {
+    max-width: 850px;
+
+    margin: 18px auto 0;
+
+    color: rgba(255,255,255,.82);
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.prestasi-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.filter-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px 17px;
+
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.10);
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.filter-btn:hover {
+    background: rgba(255,255,255,.18);
+}
+
+.filter-btn.active {
+    background: #ffab00;
+    border-color: #ffab00;
+
+    box-shadow:
+        0 8px 20px rgba(255,171,0,.25);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.prestasi-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
 
 .prestasi-card {
-    user-select: none;
-}
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 125px;
+
+    gap: 18px;
+
+    min-height: 300px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: #f7faf9;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.10);
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
+.prestasi-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,.18);
 }
+
+
+/* CONTENT */
+
+.prestasi-card-content {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+/* ICON */
+
+.prestasi-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 50%;
+
+    background: #ffab00;
+
+    color: white;
+
+    font-size: 19px;
+
+    box-shadow:
+        0 8px 18px rgba(255,171,0,.25);
+
+    flex-shrink: 0;
+}
+
+
+/* LEVEL */
+
+.prestasi-level {
+    width: fit-content;
+
+    margin-bottom: 9px;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    background: #e8f4f0;
+
+    color: #08705a;
+
+    font-size: 10px;
+    font-weight: 800;
+    text-align: justify;
+}
+
+
+/* TITLE */
+
+.prestasi-card h3 {
+    margin: 0 0 10px;
+
+    color: #075746;
+
+    font-size: 18px;
+    line-height: 1.35;
+
+    font-weight: 800;
+    text-align: justify;
+}
+
+
+/* DESCRIPTION */
+
+.prestasi-card p {
+    margin: 0;
+
+    color: #61736e;
+
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    
+}
+
+
+/* DETAIL */
+
+.prestasi-detail {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: auto;
+    padding-top: 18px;
+
+    color: #e99b00;
+
+    font-size: 13px;
+    font-weight: 800;
+    text-align: justify;
+}
+
+.prestasi-detail i {
+    transition: .2s ease;
+}
+
+.prestasi-card:hover .prestasi-detail i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FOTO PORTRAIT
+========================================================= */
+
+.prestasi-photo {
+    width: 125px;
+    height: 210px;
+
+    align-self: center;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #dfe8e5;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.13);
+}
+
+.prestasi-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform .4s ease;
+}
+
+.prestasi-card:hover .prestasi-photo img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   PAGINATION INFO
+========================================================= */
+
+.prestasi-info {
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.prestasi-pagination {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 15px;
+}
+
+.page-btn {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 10px;
+
+    background: rgba(255,255,255,.10);
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    background: rgba(255,255,255,.20);
+
+    transform: translateY(-2px);
+}
+
+.page-btn.active {
+    background: #ffab00;
+    border-color: #ffab00;
+}
+
+.page-btn:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+}
+
+.page-dots {
+    color: rgba(255,255,255,.6);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .prestasi-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .prestasi-section {
+        padding: 65px 15px 60px;
+    }
+
+    .prestasi-header h2 {
+        font-size: 32px;
+    }
+
+    .prestasi-header p {
+        font-size: 14px;
+    }
+
+    .prestasi-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .prestasi-card {
+        grid-template-columns:
+            minmax(0, 1fr) 100px;
+
+        gap: 13px;
+
+        min-height: 250px;
+
+        padding: 17px;
+    }
+
+    .prestasi-photo {
+        width: 100px;
+        height: 165px;
+    }
+
+    .prestasi-card h3 {
+        font-size: 16px;
+    }
+
+    .prestasi-card p {
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .prestasi-card {
+        grid-template-columns:
+            minmax(0, 1fr) 85px;
+    }
+
+    .prestasi-photo {
+        width: 85px;
+        height: 145px;
+    }
+
+    .filter-btn span {
+        display: none;
+    }
+
+    .filter-btn {
+        width: 43px;
+        height: 43px;
+        padding: 0;
+    }
+
+}
+/* =========================================================
+   MOBILE — 2 KARTU PER TAMPILAN, GESER KE SAMPING
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .prestasi-section {
+        padding: 60px 0 50px;
+    }
+
+    .prestasi-container {
+        width: 100%;
+    }
+
+    /* HEADER */
+
+    .prestasi-header {
+        padding: 0 18px;
+        margin-bottom: 28px;
+    }
+
+    .prestasi-header h2 {
+        font-size: 30px;
+    }
+
+    .prestasi-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* FILTER */
+
+    .prestasi-filter {
+        padding: 0 18px;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        scrollbar-width: none;
+
+        margin-bottom: 25px;
+    }
+
+    .prestasi-filter::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+    }
+
+
+    /* =====================================================
+       SLIDER
+    ===================================================== */
+
+    .prestasi-grid {
+
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        gap: 14px;
+
+        padding: 5px 16px 18px;
+
+        scroll-snap-type: x mandatory;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+    .prestasi-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* =====================================================
+       2 CARD DALAM 1 LAYAR
+    ===================================================== */
+
+    .prestasi-card {
+
+        /*
+         * 2 kartu dalam satu layar
+         */
+        flex: 0 0 calc(
+            (100vw - 46px) / 2
+        );
+
+        width: calc(
+            (100vw - 46px) / 2
+        );
+
+        min-height: 260px;
+
+        padding: 13px;
+
+        grid-template-columns:
+            minmax(0, 1fr) 58px;
+
+        gap: 8px;
+
+        border-radius: 17px;
+
+        scroll-snap-align: start;
+    }
+
+
+    /* ICON */
+
+    .prestasi-icon {
+
+        width: 38px;
+        height: 38px;
+
+        margin-bottom: 9px;
+
+        font-size: 15px;
+    }
+
+
+    /* LEVEL */
+
+    .prestasi-level {
+
+        margin-bottom: 7px;
+
+        padding: 4px 7px;
+
+        font-size: 8px;
+
+        white-space: nowrap;
+
+        max-width: 100%;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* JUDUL */
+
+    .prestasi-card h3 {
+
+        font-size: 13px;
+
+        line-height: 1.35;
+
+        margin-bottom: 7px;
+    }
+
+
+    /* DESKRIPSI */
+
+    .prestasi-card p {
+
+        font-size: 10px;
+
+        line-height: 1.45;
+
+        display: -webkit-box;
+
+        -webkit-line-clamp: 4;
+
+        -webkit-box-orient: vertical;
+
+        overflow: hidden;
+        text-align: justify;
+    }
+
+
+    /* FOTO */
+
+    .prestasi-photo {
+
+        width: 58px;
+
+        height: 100px;
+
+        border-radius: 10px;
+
+        align-self: center;
+    }
+
+
+    /* DETAIL */
+
+    .prestasi-detail {
+
+        padding-top: 8px;
+
+        gap: 4px;
+
+        font-size: 10px;
+    }
+
+
+    /* INFO */
+
+    .prestasi-info {
+
+        padding: 0 18px;
+
+        margin-top: 10px;
+
+        font-size: 12px;
+    }
+
+
+    /*
+     * Karena HP menggunakan swipe,
+     * angka pagination tidak diperlukan.
+     */
+
+    .prestasi-pagination {
+        display: none;
+    }
+
+}
+.prestasi-detail {
+    border: 0;
+    background: none;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    width: fit-content;
+}
+
+.prestasi-detail:hover {
+    color: #c98300;
+}
+/* =========================
+   MODAL PROGRAM
+========================= */
+
+.program-modal {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.75);
+
+    backdrop-filter: blur(5px);
+
+    z-index: 99999;
+}
+
+.program-modal.active {
+    display: flex;
+}
+
+
+/* =========================
+   ISI MODAL
+========================= */
+
+.program-modal .modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 1000px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 32px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+
+    animation: modalShow 0.25s ease;
+}
+
+
+@keyframes modalShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================
+   CLOSE
+========================= */
+
+.modal-close {
+
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.modal-close:hover {
+
+    background: #10b981;
+
+    color: white;
+}
+
+
+/* =========================
+   MODAL HEADER
+========================= */
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding-right: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* ICON SAMA SEPERTI CARD */
+
+.modal-icon {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d1fae5;
+    color: #059669;
+
+    border-radius: 15px;
+
+    font-size: 24px;
+}
+
+
+/* JUDUL */
+
+.modal-text h2 {
+    margin: 0 0 6px;
+
+    font-family: var(--font-heading), sans-serif;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    color: #0f172a;
+    text-align: justify;
+}
+
+
+/* DESKRIPSI */
+
+.modal-text p {
+    margin: 0;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #64748b;
+    text-align: justify;
+}
+/* =========================
+   GALERI
+   4 FOTO x 2 BARIS
+========================= */
+
+.program-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+
+.program-gallery-item {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #f1f5f9;
+    text-align: justify;
+}
+
+
+.program-gallery-item img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+.program-gallery-item:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   NAVIGASI
+========================= */
+
+.gallery-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 22px;
+}
+
+
+.gallery-page-btn {
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #059669;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.gallery-page-btn:hover {
+
+    background: #10b981;
+
+    color: white;
+}
+
+
+#galleryPage {
+
+    min-width: 45px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .program-modal .modal-content {
+
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .modal-header h2 {
+
+        font-size: 19px;
+    }
+
+
+    .modal-header p {
+
+        font-size: 13px;
+    }
+
+
+    .program-gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+}
+.news-description {
+    text-align: justify;
+}
+/* ========================================
+   STAFF CARD
+======================================== */
+
+.staff-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ========================================
+   MODAL BACKGROUND
+======================================== */
+
+.staff-modal {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(15, 23, 42, 0.65);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 9999;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* MODAL AKTIF */
+
+.staff-modal.active {
+    display: flex;
+}
+
+
+/* ========================================
+   MODAL BOX
+======================================== */
+
+.staff-modal-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 850px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 35px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.25);
+
+    animation: staffModalIn 0.3s ease;
+}
+
+
+/* ========================================
+   ANIMASI
+======================================== */
+
+@keyframes staffModalIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* ========================================
+   CLOSE
+======================================== */
+
+.staff-modal-close {
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #334155;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    z-index: 2;
+}
+
+
+.staff-modal-close:hover {
+
+    background: #dcfce7;
+
+    color: #16a34a;
+
+}
+
+
+/* ========================================
+   FOTO
+======================================== */
+
+.staff-modal-photo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.staff-modal-photo img {
+
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid #dcfce7;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ========================================
+   NAMA
+======================================== */
+
+.staff-modal-info h2 {
+
+    margin: 0;
+
+    padding-right: 40px;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    color: #1e293b;
+
+}
+
+
+/* ========================================
+   JABATAN
+======================================== */
+
+.staff-modal-position {
+
+    margin-top: 7px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #16a34a;
+}
+
+
+/* ========================================
+   DESKRIPSI
+======================================== */
+
+.staff-modal-description {
+
+    position: relative;
+
+    margin-top: 22px;
+
+    padding: 20px 20px 20px 35px;
+
+    background: #f0fdf4;
+
+    border-radius: 15px;
+
+    border-left: 4px solid #16a34a;
+}
+
+
+.staff-modal-description p {
+
+    margin: 0;
+
+    color: #475569;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+}
+
+
+.quote-icon {
+
+    position: absolute;
+
+    left: 10px;
+    top: 8px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #16a34a;
+}
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+.staff-modal-section {
+
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+.staff-modal-section h3 {
+
+    margin: 0 0 12px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #15803d;
+
+}
+
+
+/* ========================================
+   TUGAS
+======================================== */
+
+.staff-modal-section ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.staff-modal-section li {
+
+    position: relative;
+
+    padding-left: 25px;
+
+    margin-bottom: 9px;
+
+    color: #475569;
+
+    font-size: 14px;
+
+}
+
+
+.staff-modal-section li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #dcfce7;
+
+    color: #16a34a;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* ========================================
+   MOTTO
+======================================== */
+
+.motto-section p {
+
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.staff-modal-button {
+
+    margin-top: 25px;
+
+    padding: 11px 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.staff-modal-button:hover {
+
+    background: #15803d;
+
+    transform: translateY(-2px);
+
+}
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .staff-modal {
+        padding: 15px;
+    }
+
+
+    .staff-modal-box {
+
+        max-height: 92vh;
+
+        padding: 28px 20px;
+
+        display: block;
+
+        text-align: center;
+
+        border-radius: 22px;
+    }
+
+
+    .staff-modal-photo {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .staff-modal-photo img {
+
+        width: 170px;
+        height: 170px;
+    }
+
+
+    .staff-modal-info h2 {
+
+        padding-right: 0;
+
+        font-size: 21px;
+    }
+
+
+    .staff-modal-position {
+
+        font-size: 15px;
+    }
+
+
+    .staff-modal-description {
+
+        text-align: left;
+
+        margin-top: 18px;
+
+        padding: 18px 15px 18px 30px;
+    }
+
+
+    .staff-modal-section {
+
+        text-align: left;
+    }
+
+
+    .staff-modal-button {
+
+        width: 100%;
+    }
+
 }
         .delay-100 { animation-delay: 100ms; }
         .delay-200 { animation-delay: 200ms; }
@@ -960,7 +2446,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="max-w-3xl text-center md:text-left">
                 <span class="inline-block py-1 px-3 rounded-full bg-brand-500/20 border border-brand-400 text-brand-100 font-medium text-sm mb-6 fade-in-up backdrop-blur-sm">
-                    Yayasan Hasbunallah Wani'mal Wakil
+                    Yayasan Hasbunallah Wa Ni'mal Wakil
                 </span>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6 fade-in-up delay-100">
                     Membangun Generasi <span class="text-accent-400">Qur'ani</span>, Cerdas, dan Berprestasi.
@@ -1588,16 +3074,31 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Program 1 -->
-                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-book-open-reader"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">Metode Ummi (Khatmul Qur'an)</h3>
-                    <p class="text-slate-600">Metode pembelajaran membaca Al-Qur'an secara tartil. Diikuti dengan ujian Imtihan untuk memastikan kualitas bacaan dan hafalan juz siswa.</p>
-                </div>
+<div
+    onclick="openProgramModal('ummi')"
+    class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 cursor-pointer">
+
+    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+        <i class="fa-solid fa-book-open-reader"></i>
+    </div>
+
+    <h3 class="text-xl font-heading font-bold text-slate-800 mb-3">
+        Metode Ummi (Khatmul Qur'an)
+    </h3>
+
+    <p class="text-slate-600">
+        Metode pembelajaran membaca Al-Qur'an secara tartil.
+        Diikuti dengan ujian Imtihan untuk memastikan kualitas
+        bacaan dan hafalan juz siswa.
+    </p>
+
+</div>
 
                 <!-- Program 2 -->
-                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                <div
+    onclick="openProgramModal('haji')"
+    class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 cursor-pointer">
+                
                     <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-kaaba"></i>
                     </div>
@@ -1606,7 +3107,10 @@
                 </div>
 
                 <!-- Program 3 -->
-                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                <div
+    onclick="openProgramModal('iptek')"
+    class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 cursor-pointer">
+
                     <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
@@ -1615,7 +3119,10 @@
                 </div>
 
                 <!-- Program 4 -->
-                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                <div
+    onclick="openProgramModal('lingkungan')"
+    class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 cursor-pointer">
+
                     <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-leaf"></i>
                     </div>
@@ -1624,7 +3131,10 @@
                 </div>
 
                 <!-- Program 5 -->
-                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                <div
+    onclick="openProgramModal('family')"
+    class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 cursor-pointer">
+
                     <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-people-roof"></i>
                     </div>
@@ -1633,7 +3143,10 @@
                 </div>
 
                 <!-- Program 6 -->
-                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                <div
+    onclick="openProgramModal('fullday')"
+    class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-500 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 cursor-pointer">
+
                     <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-school"></i>
                     </div>
@@ -1643,519 +3156,166 @@
             </div>
         </div>
     </section>
+<div id="programModal" class="program-modal">
 
-   <!-- ========================= -->
-<!-- PRESTASI SISWA -->
-<!-- ========================= -->
-<section id="prestasi" class="py-12 bg-brand-900 relative overflow-hidden">
+    <div class="modal-content">
 
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <pattern id="prestasiPattern" width="40" height="40"
-                    patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-                </pattern>
-            </defs>
+        <button
+            class="modal-close"
+            onclick="closeProgramModal()">
+            &times;
+        </button>
 
-            <rect
-                width="100%"
-                height="100%"
-                fill="url(#prestasiPattern)"
-                class="text-white">
-            </rect>
-        </svg>
+
+        <div class="modal-header">
+
+    <div
+        class="modal-icon"
+        id="modalIcon">
+        <i class="fa-solid fa-book-open-reader"></i>
     </div>
 
+    <div class="modal-text">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <h2 id="modalTitle">
+            Metode Ummi (Khatmul Qur'an)
+        </h2>
 
-        <!-- JUDUL -->
-        <div class="text-center max-w-3xl mx-auto mb-10">
+        <p id="modalDescription">
+            Deskripsi program.
+        </p>
 
-            <h4 class="text-accent-400 font-bold uppercase tracking-wider text-sm mb-2">
-                Kebanggaan Sekolah
-            </h4>
+    </div>
 
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+</div>
+
+
+        <!-- GALERI 8 FOTO -->
+
+        <div
+            id="programGallery"
+            class="program-gallery">
+        </div>
+
+
+        <!-- NAVIGASI -->
+
+        <div class="gallery-footer">
+
+            <button
+                id="galleryPrev"
+                class="gallery-page-btn"
+                onclick="previousGalleryPage()">
+                ❮
+            </button>
+
+            <span id="galleryPage">
+                1 / 1
+            </span>
+
+            <button
+                id="galleryNext"
+                class="gallery-page-btn"
+                onclick="nextGalleryPage()">
+                ❯
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =========================================================
+     PRESTASI GEMILANG SISWA
+========================================================= -->
+
+<section id="prestasi" class="prestasi-section">
+
+    <div class="prestasi-container">
+
+        <!-- HEADER -->
+        <div class="prestasi-header">
+
+            <span class="prestasi-eyebrow">
+                🏆 KEBANGGAAN SEKOLAH
+            </span>
+
+            <h2>
                 Prestasi Gemilang Siswa
             </h2>
 
-            <p class="text-brand-100 text-lg">
-                Mengukir prestasi di berbagai bidang, bukti nyata dari dedikasi
-                dan kualitas pendidikan di SD Hasbunallah.
+            <p>
+                Mengukir prestasi di berbagai bidang,
+                bukti nyata dari dedikasi dan kualitas
+                pendidikan di SD Hasbunallah.
             </p>
 
         </div>
 
 
-        <!-- ========================= -->
-        <!-- NAVIGASI SLIDER -->
-        <!-- ========================= -->
+        <!-- FILTER -->
+        <div class="prestasi-filter">
 
-        <div class="relative">
-
-            <!-- TOMBOL KIRI -->
             <button
-                id="prestasiPrev"
-                type="button"
-                class="absolute left-0 top-1/2 -translate-y-1/2 z-20
-                       w-11 h-11 rounded-full
-                       bg-white text-brand-700
-                       shadow-xl
-                       flex items-center justify-center
-                       hover:bg-brand-50
-                       transition
-                       -translate-x-1/2">
-
-                <i class="fa-solid fa-chevron-left"></i>
-
+                class="filter-btn active"
+                data-filter="semua"
+            >
+                <i class="fa-solid fa-border-all"></i>
+                <span>Semua</span>
             </button>
 
-
-            <!-- AREA SLIDER -->
-            <div
-                id="prestasiSlider"
-                class="flex gap-6 overflow-x-auto scroll-smooth
-                       snap-x snap-mandatory
-                       pb-5
-                       px-2
-                       scrollbar-hide">
-
-                <!-- ========================= -->
-                <!-- PRESTASI 1 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 2 O2SN Atletik Putri',
-                        'Tingkat Provinsi',
-                        'Olimpiade Olahraga Siswa Nasional (O2SN) SD se-Kalimantan Selatan 2026.',
-                        'Mahira Hasna Kamila',
-                        'https://i.ibb.co.com/FqLJY77K/mahira-02sn.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-trophy"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Tingkat Provinsi
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 2 O2SN Atletik Putri
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        Olimpiade Olahraga Siswa Nasional (O2SN) Provinsi Kalimantan Selatan 2026.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-
-
-                <!-- ========================= -->
-                <!-- PRESTASI 2 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 3 O2SN Bulu Tangkis Putri',
-                        'Tingkat Provinsi',
-                        'Olimpiade Olahraga Siswa Nasional (O2SN) Tingkat SD se-Kalimantan Selatan.',
-                        'Khairunnisa Salsabila',
-                        'https://i.ibb.co.com/9HWy7FdY/caca-o3sn.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-medal"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Tingkat Provinsi
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 3 O2SN Bulu Tangkis Putri
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        Olimpiade Olahraga Siswa Nasional (O2SN) Tingkat SD
-                        se-Kalimantan Selatan.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-
-
-                <!-- ========================= -->
-                <!-- PRESTASI 3 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 1 Lomba Tartil Putra',
-                        'Event Sekolah',
-                        'HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.',
-                        'Rifqi Zidan Farras',
-                        'https://i.ibb.co.com/svqdh21Q/tartil-zidan.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-medal"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Event Sekolah
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 1 Lomba Tartil Putra
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-
-
-                <!-- ========================= -->
-                <!-- PRESTASI 4 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 1 Lomba Tartil Putri',
-                        'Event Sekolah',
-                        'HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.',
-                        'Humaira Nurhafizah',
-                        'https://i.ibb.co.com/JFd90SqN/tartil-hafizah.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-palette"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Event Sekolah
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 1 Lomba Tartil Putri
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        HUT ke-54 SMP Plus Murung Pudak Tabalong Tabalong Tahun 2026.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-
-
-                <!-- ========================= -->
-                <!-- PRESTASI 5 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 2 FLS3N Tari Kelompok',
-                        'Tingkat Kabupaten',
-                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Lomba Seni dan Sastra tingkat Kabupaten Tabalong.',
-                        'Alifah,Adiba dan Alyn',
-                        'https://i.ibb.co.com/Y7h5hS7C/menari.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-quran"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Tingkat Kabupaten
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 2 FLS3N Tari Kelompok
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        Prestasi siswa SD Hasbunallah dalam ajang Festival Lomba Seni dan Sastra tingkat Kabupaten Tabalong.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-                <!-- ========================= -->
-                <!-- PRESTASI 6 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 1 Lomba Adzan',
-                        'Event Nurul Musthofa Islamic Fest',
-                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.',
-                        'Rifqi Zidan Farras',
-                        'https://i.ibb.co.com/Zz2d9Fjf/adzan-NM.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-quran"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Event Nurul Musthofa Islamic Fest
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 1 Lomba Adzan
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-                <!-- ========================= -->
-                <!-- PRESTASI 7 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Juara 3 Lomba Futsal',
-                        'Event Nurul Musthofa Islamic Fest',
-                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.',
-                        'Tim Futsal SD Hasbunallah',
-                        'https://i.ibb.co.com/DDdTGfkG/futsal.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-quran"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Event Nurul Musthofa Islamic Fest
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                        Juara 3 Lomba Futsal
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-                <!-- ========================= -->
-                <!-- PRESTASI 8 -->
-                <!-- ========================= -->
-
-                <div
-                    class="prestasi-card flex-none w-[280px] md:w-[300px]
-                           snap-start
-                           bg-white/10 backdrop-blur-md
-                           rounded-2xl p-6
-                           border border-white/20
-                           hover:bg-white/20
-                           transition-all duration-300
-                           transform hover:-translate-y-2
-                           cursor-pointer"
-                    onclick="openPrestasiModal(
-                        'Harapan 2 Fashion Show',
-                        'Event Nurul Musthofa Islamic Fest',
-                        'Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.',
-                        'Fathiya Khoirunnisa',
-                        'https://i.ibb.co.com/t7gWz6h/fhatiya-fashion-show.jpg'
-                    )">
-
-                    <div class="w-12 h-12 bg-accent-500 rounded-full
-                                flex items-center justify-center
-                                text-white text-xl mb-4
-                                shadow-lg shadow-accent-500/40">
-
-                        <i class="fa-solid fa-quran"></i>
-
-                    </div>
-
-                    <span class="text-brand-200 text-sm font-medium">
-                        Event Nurul Musthofa Islamic Fest
-                    </span>
-
-                    <h3 class="text-xl font-heading font-bold text-white mt-1 mb-2">
-                       Harapan 2 Fashion Show
-                    </h3>
-
-                    <p class="text-brand-100 text-sm">
-                        Prestasi siswa SD Hasbunallah dalam ajang Festival Islam Pondok Pesantren Nurul Musthofa.
-                    </p>
-
-                    <div class="mt-5 text-accent-400 text-sm font-semibold">
-                        Lihat detail
-                        <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- TOMBOL KANAN -->
             <button
-                id="prestasiNext"
-                type="button"
-                class="absolute right-0 top-1/2 -translate-y-1/2 z-20
-                       w-11 h-11 rounded-full
-                       bg-white text-brand-700
-                       shadow-xl
-                       flex items-center justify-center
-                       hover:bg-brand-50
-                       transition
-                       translate-x-1/2">
+                class="filter-btn"
+                data-filter="provinsi"
+            >
+                <i class="fa-solid fa-medal"></i>
+                <span>Tingkat Provinsi</span>
+            </button>
 
-                <i class="fa-solid fa-chevron-right"></i>
+            <button
+                class="filter-btn"
+                data-filter="kabupaten"
+            >
+                <i class="fa-solid fa-music"></i>
+                <span>Tingkat Kabupaten</span>
+            </button>
 
+            <button
+                class="filter-btn"
+                data-filter="sekolah"
+            >
+                <i class="fa-solid fa-palette"></i>
+                <span>Event Sekolah</span>
             </button>
 
         </div>
 
 
-        <!-- PETUNJUK -->
-        <div class="text-center mt-5 text-brand-200 text-sm">
-            <i class="fa-solid fa-arrows-left-right mr-1"></i>
-            Geser untuk melihat prestasi lainnya
-        </div>
+        <!-- GRID PRESTASI -->
+        <div
+            id="prestasiGrid"
+            class="prestasi-grid"
+        ></div>
+
+
+        <!-- INFO PAGINATION -->
+        <div
+            id="prestasiInfo"
+            class="prestasi-info"
+        ></div>
+
+
+        <!-- PAGINATION -->
+        <div
+            id="prestasiPagination"
+            class="prestasi-pagination"
+        ></div>
 
     </div>
+
 </section>
+
+
 <!-- ========================= -->
 <!-- MODAL DETAIL PRESTASI -->
 <!-- ========================= -->
@@ -2304,6 +3464,85 @@
         </div>
     </section>
 
+<!-- =========================
+     MODAL PROFIL STAFF
+========================= -->
+
+<div id="staffModal" class="staff-modal">
+
+    <div class="staff-modal-box">
+
+        <!-- Tombol Close -->
+        <button class="staff-modal-close" onclick="closeStaffModal()">
+            ×
+        </button>
+
+
+        <!-- FOTO -->
+        <div class="staff-modal-photo">
+            <img id="staffModalImage" src="" alt="">
+        </div>
+
+
+        <!-- INFORMASI -->
+        <div class="staff-modal-info">
+
+            <h2 id="staffModalName">
+                Nama Staff
+            </h2>
+
+            <div id="staffModalPosition" class="staff-modal-position">
+                Jabatan
+            </div>
+
+
+            <!-- DESKRIPSI -->
+            <div class="staff-modal-description">
+
+                <span class="quote-icon">“</span>
+
+                <p id="staffModalDescription">
+                    Deskripsi staff.
+                </p>
+
+            </div>
+
+
+            <!-- TUGAS -->
+            <div class="staff-modal-section">
+
+                <h3>
+                    Tugas &amp; Tanggung Jawab
+                </h3>
+
+                <ul id="staffModalTasks"></ul>
+
+            </div>
+
+
+            <!-- MOTTO -->
+            <div class="staff-modal-section motto-section">
+
+                <h3>Motto</h3>
+
+                <p id="staffModalMotto"></p>
+
+            </div>
+
+
+            <!-- TOMBOL -->
+            <button class="staff-modal-button"
+                    onclick="closeStaffModal()">
+
+                Tutup
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 <!-- ========================= -->
 <!-- BERITA & KEGIATAN -->
 <!-- ========================= -->
@@ -2405,7 +3644,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                     Sebanyak 112 siswa SD Hasbunallah Tabalong mengikuti
                     Khatmul Qur'an dan Imtihan dengan metode Ummi di
@@ -2484,7 +3723,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                     Siswa kelas 4 dan 5 SD Hasbunallah mengikuti kegiatan
                     Seminar Keagamaan yang membahas tentang pentingnya
@@ -2564,7 +3803,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                     SD Hasbunallah melaksanakan kegiatan Senam Sehat
                     Bersama yang diikuti oleh seluruh siswa dan guru
@@ -2642,7 +3881,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                   Masa Pengenalan Lingkungan Satuan Pendidikan (MPLS) di SD Hasbunallah menjadi kegiatan awal yang menyenangkan bagi siswa dalam mengenal lingkungan sekolah, guru, tenaga kependidikan, serta teman-teman baru.
 
@@ -2718,7 +3957,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                     SD Hasbunallah menyediakan berbagai kegiatan ekstrakurikuler bagi siswa kelas 3, 4, dan 5 sebagai wadah untuk mengembangkan minat, bakat, kreativitas, serta keterampilan siswa di luar kegiatan pembelajaran di kelas.
 
@@ -2793,7 +4032,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                     Kegiatan Pramuka di SD Hasbunallah menjadi salah satu kegiatan yang bertujuan untuk membentuk karakter siswa melalui pengalaman belajar yang menyenangkan dan penuh kebersamaan.
 
@@ -2868,7 +4107,7 @@
                 </h3>
 
 
-                <p class="text-slate-600 text-sm line-clamp-3 mb-4">
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
 
                     Kegiatan Ramah Tamah Orang Tua Murid Kelas 1 SD Hasbunallah menjadi momen yang hangat untuk mempererat tali silaturahmi antara pihak sekolah dan orang tua siswa.
 
@@ -2888,12 +4127,164 @@
             </div>
 
         </article>
+         <!-- ========================= -->
+        <!-- BERITA 8 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/F47K5xtm/pramuka3.jpg"
+                    alt="Hari Pramuka"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Kepemimpinan 
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    14 Agustus 
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2">
+
+                    Semarak Hari Pramuka, SD Hasbunallah Gelar Upacara Peringatan ke-65
+
+
+                </h3>
+
+
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
+
+                    Dalam rangka memperingati Hari Pramuka yang ke-65, SD Hasbunallah melaksanakan upacara peringatan Hari Pramuka pada Jumat, 14 Agustus 2026.
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita8')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+         <!-- ========================= -->
+        <!-- BERITA 9 -->
+        <!-- ========================= -->
+
+        <article
+            class="flex-none w-[300px] md:w-[350px]
+                   snap-start
+                   bg-white rounded-2xl
+                   overflow-hidden
+                   shadow-md
+                   hover:shadow-xl
+                   transition-all duration-300
+                   border border-slate-100">
+
+            <div class="relative h-56">
+
+                <img
+                    src="https://i.ibb.co.com/yFHZDPTy/agustus.jpg"
+                    alt="HUT RI"
+                    class="w-full h-full object-cover">
+
+                <div
+                    class="absolute top-4 left-4
+                           bg-brand-500 text-white
+                           text-xs font-bold
+                           px-3 py-1.5 rounded-full">
+
+                    Kegiatan Kemerdekaan 
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6">
+
+                <div class="flex items-center text-slate-400 text-sm mb-3">
+
+                    <i class="fa-regular fa-calendar mr-2"></i>
+
+                    18-20 Agustus
+
+                </div>
+
+
+                <h3
+                    class="text-xl font-heading font-bold
+                           text-slate-800 mb-3
+                           line-clamp-2">
+
+                    SD Hasbunallah Rayakan HUT Kemerdekaan dengan Beragam Lomba dan Doorprize
+
+
+                </h3>
+
+
+                <p class="text-slate-600 text-justify text-sm line-clamp-3 mb-4">
+
+                    Dalam rangka memperingati Hari Kemerdekaan Republik Indonesia, SD Hasbunallah mengadakan rangkaian kegiatan kemerdekaan selama tiga hari yang berlangsung meriah dan penuh kebersamaan.
+
+                </p>
+
+
+                <button
+                    onclick="openBerita('berita9')"
+                    class="text-brand-600 font-semibold
+                           hover:text-brand-700">
+
+                    Baca selengkapnya
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+        
 
     </div>
 
 
 
-    <!-- ========================= -->
+<!-- ========================= -->
     <!-- TOMBOL KANAN -->
     <!-- ========================= -->
 
@@ -2914,7 +4305,7 @@
 
 </div>
 
-        <!-- ==============================
+ <!-- ==============================
      MODAL BERITA
 ================================ -->
 
@@ -2975,7 +4366,7 @@
             <!-- Isi berita -->
             <div
                 id="modalBeritaContent"
-                class="text-slate-600 leading-8 text-base"
+                class="text-slate-600 text-justify leading-8 text-base"
             ></div>
 
         </div>
@@ -3010,7 +4401,7 @@
                             </div>
                             <div class="ml-5">
                                 <h4 class="text-lg font-heading font-semibold text-slate-800">Telepon / WhatsApp</h4>
-                                <p class="text-slate-600 mt-1">0526-2022635</p>
+                                <p class="text-slate-600 mt-1">+62 822-1372-</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -3028,7 +4419,7 @@
                             </div>
                             <div class="ml-5">
                                 <h4 class="text-lg font-heading font-semibold text-slate-800">Yayasan Naungan</h4>
-                                <p class="text-slate-600 mt-1">Yayasan Hasbunallah Wani'mal Wakil</p>
+                                <p class="text-slate-600 mt-1">Yayasan Hasbunallah Wa Ni'mal Wakil</p>
                             </div>
                         </div>
                     </div>
@@ -3178,7 +4569,7 @@
                         <li><span class="text-white font-medium w-24 inline-block">NPSN</span> : 30305364</li>
                         <li><span class="text-white font-medium w-24 inline-block">Bentuk</span> : Sekolah Dasar (SD)</li>
                         <li><span class="text-white font-medium w-24 inline-block">Status</span> : Swasta</li>
-                        <li><span class="text-white font-medium w-24 inline-block">Naungan</span> : Yayasan HASBUNALLAH WANI'MAL WAKIL</li>
+                        <li><span class="text-white font-medium w-24 inline-block">Naungan</span> : Yayasan Hasbunallah Wa Ni'mal Wakil</li>
                         <li><span class="text-white font-medium w-24 inline-block">Akreditasi</span> : A (Berdasarkan BAN-SM)</li>
                     </ul>
                 </div>
@@ -3269,226 +4660,700 @@
                 name: "Iis Lailan Sari,S.Pd",
                 role: "Wakil Kepala Sekolah",
                 role: "Wakasek Bidang Kesiswaan",
-                foto: "https://i.ibb.co.com/hJN6R8jc/Bu-IIS.jpg"
+                foto: "https://i.ibb.co.com/qMcTwJ7m/Bu-IIS1.png",
+                deskripsi: "Bertanggung jawab dalam mengelola dan mengembangkan kegiatan kesiswaan serta mendukung pembentukan karakter, kedisiplinan, dan prestasi peserta didik.",
+
+tugas: [
+    "Mengelola dan mengkoordinasikan kegiatan kesiswaan.",
+    "Membina kedisiplinan, karakter, dan sikap peserta didik.",
+    "Mengkoordinasikan kegiatan ekstrakurikuler dan pengembangan bakat siswa.",
+    "Memantau prestasi dan perkembangan peserta didik di bidang akademik maupun nonakademik.",
+    "Mendukung terciptanya lingkungan sekolah yang aman, tertib, dan nyaman."
+],
+
+motto: "Membentuk karakter, mengembangkan potensi, dan mengantarkan siswa meraih prestasi."
             },
             {
                 name: "Istihlaliyah,S.Ss.,S.Pd",
                 role: "Wakil Kepala Sekolah",
                 role: "Wakasek Bidang Kurikulum",
-                foto: "https://i.ibb.co.com/d0RQvY8H/Bu-Teteh-removebg-preview.png"
+                foto: "https://i.ibb.co.com/SwLM8Bph/Bu-Teteh-removebg-preview1.png",
+                deskripsi: "Bertanggung jawab dalam mengkoordinasikan pelaksanaan kurikulum dan memastikan proses pembelajaran berjalan secara terarah, efektif, dan sesuai dengan tujuan pendidikan sekolah.",
+
+tugas: [
+    "Mengkoordinasikan pelaksanaan kurikulum dan program pembelajaran.",
+    "Menyusun dan mengatur program kegiatan akademik sekolah.",
+    "Mengkoordinasikan jadwal pembelajaran dan kegiatan akademik.",
+    "Memantau pelaksanaan proses pembelajaran.",
+    "Mendukung peningkatan kualitas pembelajaran dan kompetensi guru."
+],
+
+motto: "Menguatkan pembelajaran, meningkatkan kualitas, dan mengembangkan potensi."
             },
             {
                 name: "Endah Feri Prihatin, S.Pd",
                 role: "Wakil Kepala Sekolah",
                 role: "Wakasek Bidang Sarana & Prasarana",
-                foto: "https://i.ibb.co.com/7tcZH9bH/Bu-Endah.jpg"
+                foto: "https://i.ibb.co.com/7tcZH9bH/Bu-Endah.jpg",
+                deskripsi: "Bertanggung jawab dalam pengelolaan dan pemeliharaan sarana prasarana sekolah untuk mendukung terciptanya lingkungan belajar yang aman, nyaman, dan kondusif.",
+
+tugas: [
+    "Mengelola dan mendata sarana prasarana sekolah.",
+    "Memantau kondisi dan kelayakan fasilitas sekolah.",
+    "Mengkoordinasikan pemeliharaan dan perawatan fasilitas sekolah.",
+    "Mengidentifikasi kebutuhan sarana dan prasarana pembelajaran.",
+    "Mendukung penyediaan fasilitas yang menunjang kegiatan pendidikan."
+],
+
+motto: "Menata fasilitas, menciptakan kenyamanan, mendukung pembelajaran."
             },
             {
                 name: "Lina Hidayati",
                 role: "Kepala Tata Usaha",
-                foto: "https://i.ibb.co.com/csmcH6Z/Bu-Lina-removebg-preview.png"
+                foto: "https://i.ibb.co.com/RkFMmY7f/Bu-Lina-removebg-preview1.png",
+                deskripsi: "Bertanggung jawab dalam mengelola administrasi sekolah secara tertib, efektif, dan terorganisir untuk mendukung kelancaran seluruh kegiatan sekolah.",
+
+tugas: [
+    "Mengelola dan mengkoordinasikan administrasi sekolah.",
+    "Mengelola surat-menyurat dan dokumen administrasi sekolah.",
+    "Mengkoordinasikan pelaksanaan tugas tenaga administrasi.",
+    "Menata dan menjaga kerapian arsip serta dokumen sekolah.",
+    "Mendukung kelancaran pelayanan administrasi bagi warga sekolah."
+],
+
+motto: "Tertib dalam administrasi, tepat dalam pelayanan."
             },
             {
                 name: "Kamaliyah,S.S.T.Ars",
                 role: "Bendahara",
-                foto: "https://i.ibb.co.com/XxSX0Bm1/bu-kamal-removebg-preview.png"
+                foto: "https://i.ibb.co.com/XxSX0Bm1/bu-kamal-removebg-preview.png",
+                deskripsi: "Bertanggung jawab dalam mengelola administrasi dan keuangan sekolah secara tertib, transparan, dan dapat dipertanggungjawabkan.",
+
+tugas: [
+    "Mengelola administrasi keuangan sekolah.",
+    "Mencatat pemasukan dan pengeluaran keuangan.",
+    "Menyiapkan dan menyusun laporan keuangan.",
+    "Mengelola bukti transaksi dan dokumen keuangan.",
+    "Mendukung pengelolaan anggaran sekolah secara tertib dan transparan."
+],
+
+motto: "Amanah dalam mengelola, transparan dalam mempertanggungjawabkan."
             },
             {
                 name: "Indah Anggie Ashari,S.Kom",
                 role: "Operator Sekolah",
-                foto: "https://i.ibb.co.com/cSpzJbwt/Indah-removebg-preview.png"
+                foto: "https://i.ibb.co.com/cSpzJbwt/Indah-removebg-preview.png",
+                deskripsi: "Bertanggung jawab dalam pengelolaan data dan sistem informasi sekolah untuk mendukung kelancaran administrasi serta pelayanan pendidikan.",
+
+tugas: [
+    "Mengelola dan memperbarui data sekolah.",
+    "Mengelola data peserta didik, guru, dan tenaga kependidikan.",
+    "Menginput dan memperbarui data pada sistem administrasi pendidikan.",
+    "Menjaga ketertiban dan keakuratan data sekolah.",
+    "Mendukung kebutuhan administrasi dan layanan informasi sekolah."
+],
+
+motto: "Data akurat, administrasi tertib, pelayanan semakin baik."
             },
             {
                 name: "Wiwin Rumiati",
                 role: "Kepala Perpustakaan",
-                foto: "https://i.ibb.co.com/23GgBpbd/Bu-Wiwin-removebg-preview.png"
+                foto: "https://i.ibb.co.com/xSdwLSt9/Bu-Wiwin-removebg-preview1.png",
+                deskripsi: "Bertanggung jawab dalam mengelola perpustakaan sebagai pusat sumber belajar serta menumbuhkan minat baca dan budaya literasi peserta didik.",
+
+tugas: [
+    "Mengelola koleksi dan administrasi perpustakaan.",
+    "Menata dan memelihara buku serta sumber belajar.",
+    "Memberikan pelayanan kepada peserta didik dan warga sekolah.",
+    "Mendorong minat baca dan kegiatan literasi.",
+    "Menciptakan perpustakaan sebagai ruang belajar yang nyaman dan menyenangkan."
+],
+
+motto: "Membaca membuka jendela ilmu, literasi membuka jalan menuju masa depan."
             }
         ]
     },
 
     guruKelas: [
         {
-            name:"Dwinita Novitasari",
+            name:"Dwinita Novitasari, S.Pd.",
             role:"Wali Kelas 1A",
-            foto:"https://i.ibb.co.com/8L9Lrt6m/Bu-Nita.jpg"
+            foto:"https://i.ibb.co.com/8L9Lrt6m/Bu-Nita.jpg",
+             deskripsi: "Bertanggung jawab dalam membimbing dan mendampingi peserta didik kelas 1A dalam proses pembelajaran dan perkembangan karakter.",
+
+    tugas: [
+        "Mengelola dan membimbing kegiatan pembelajaran di kelas.",
+        "Membina kedisiplinan dan karakter peserta didik.",
+        "Memantau perkembangan akademik dan sikap peserta didik.",
+        "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik."
+    ],
+
+    motto: "Mendidik dengan hati, membimbing dengan kasih."
         },
         {
             name:"Nida Rusyda,S.Pd",
             role:"Wali Kelas 1B",
-            foto:"https://i.ibb.co.com/gM3td271/Bu-Nida.jpg"
+            foto:"https://i.ibb.co.com/gM3td271/Bu-Nida.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Rahmah,S.Pd",
             role:"Wali Kelas 1C",
-            foto:"https://i.ibb.co.com/7xTFBy18/Bu-Rahmah.jpg"
+            foto:"https://i.ibb.co.com/7xTFBy18/Bu-Rahmah.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Kiki Nur Ayni,S.Pd",
             role:"Wali Kelas 1D",
-            foto:"https://i.ibb.co.com/WWw2kk8k/Bu-Kiki.jpg"
+            foto:"https://i.ibb.co.com/WWw2kk8k/Bu-Kiki.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Linda Rahmawati,A.Ma",
             role:"Wali Kelas 2A",
-            foto:"https://i.ibb.co.com/TDgFS1LM/Bu-Linda.jpg"
+            foto:"https://i.ibb.co.com/4ZVzb9DK/Bu-Linda1.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Antung Diah Fitriani,S.Pd",
             role:"Wali Kelas 2B",
-            foto:"https://i.ibb.co.com/pvKnq5TZ/Bu-Antung.jpg"
+            foto:"https://i.ibb.co.com/pvKnq5TZ/Bu-Antung.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Istihlaliyah,S.Ss.,S.Pd",
             role:"Wali Kelas 2C",
-            foto:"https://i.ibb.co.com/MvFWm8B/Bu-Teteh-removebg-preview.png"
+            foto:"https://i.ibb.co.com/SwLM8Bph/Bu-Teteh-removebg-preview1.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Tutut Pratiwi,S.Pd",
             role:"Wali Kelas 2D",
-            foto:"https://i.ibb.co.com/TxKxCpfy/Bu-Tutut.jpg"
+            foto:"https://i.ibb.co.com/TxKxCpfy/Bu-Tutut.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Ahmad Suriyani,S.Pd",
             role:"Wali Kelas 3A",
-            foto:"https://i.ibb.co.com/0RwPCL8q/Pak-Surya.jpg"
+            foto:"https://i.ibb.co.com/0RwPCL8q/Pak-Surya.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Eli Arisanti,S.Pd",
             role:"Wali Kelas 3B",
-            foto:"https://i.ibb.co.com/DfQGjhTf/Bu-Eli.jpg"
+            foto:"https://i.ibb.co.com/DfQGjhTf/Bu-Eli.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Nor Aulia,S.Pd",
             role:"Wali Kelas 3C",
-            foto:"https://i.ibb.co.com/bRFF7stG/Nor-Aulia-S-Pd-JPG-removebg-preview.png"
+            foto:"https://i.ibb.co.com/bRFF7stG/Nor-Aulia-S-Pd-JPG-removebg-preview.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Lianoor Munawarah,S.Pd",
             role:"Wali Kelas 3D",
-            foto:"https://i.ibb.co.com/k2nh0WrG/Bu-Lia.jpg"
+            foto:"https://i.ibb.co.com/k2nh0WrG/Bu-Lia.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Ikhsan Wahyudinoor,S.Pd.,M.M",
             role:"Wali Kelas 4A",
-            foto:"https://i.ibb.co.com/hRTKBwnx/Chat-GPT-Image-16-Jul-2026-10-41-23.png"
+            foto:"https://i.ibb.co.com/hRTKBwnx/Chat-GPT-Image-16-Jul-2026-10-41-23.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Dina Fauziah,S.Pd",
             role:"Wali Kelas 4B",
-            foto:"https://i.ibb.co.com/GQLd80j3/Bu-Dina.jpg"
+            foto:"https://i.ibb.co.com/GQLd80j3/Bu-Dina.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Ratna Mei Linawati,S.Pd",
             role:"Wali Kelas 4C",
-            foto:"https://i.ibb.co.com/xKM1bvr6/Bu-Ratna.jpg"
+            foto:"https://i.ibb.co.com/xKM1bvr6/Bu-Ratna.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Ariani Makfira,S.Pd",
             role:"Wali Kelas 4D",
-            foto:"https://i.ibb.co.com/pjHLsN6T/Bu-Ariani.jpg"
+            foto:"https://i.ibb.co.com/zhHNNynN/Bu-Ariani1.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Rika Ratna Sari,S.Pd",
             role:"Wali Kelas 5A",
-            foto:"https://i.ibb.co.com/0RRTv3Yp/Bu-Rika.jpg"
+            foto:"https://i.ibb.co.com/0RRTv3Yp/Bu-Rika.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Enny Lestiyana,S.Si",
             role:"Wali Kelas 5B",
-            foto:"https://i.ibb.co.com/H5TF6X3/Bu-Enny.jpg"
+            foto:"https://i.ibb.co.com/H5TF6X3/Bu-Enny.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Rafika,S.Pd",
             role:"Wali Kelas 6A",
-            foto:"https://i.ibb.co.com/ZRG5V1wg/Bu-Rafika.jpg"
+            foto:"https://i.ibb.co.com/ZRG5V1wg/Bu-Rafika.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Masitah Purbawati,S.Pd",
             role:"Wali Kelas 6B",
-            foto:"https://i.ibb.co.com/pB6LgzrH/Bu-SItah.png"
+            foto:"https://i.ibb.co.com/pB6LgzrH/Bu-SItah.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
         {
             name:"Endah Feri Prihatin,S.Pd",
             role:"Wali Kelas 6C",
-            foto:"https://i.ibb.co.com/5xJwjz90/Bu-Endah.jpg"
+            foto:"https://i.ibb.co.com/5xJwjz90/Bu-Endah.jpg",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         },
          {
             name:"Iis Lailan Sari,S.Pd",
             role:"Wali Kelas 6D",
-            foto:"https://i.ibb.co.com/tPsKbBCY/Bu-IIS.jpg"
+            foto:"https://i.ibb.co.com/qMcTwJ7m/Bu-IIS1.png",
+            deskripsi: "Bertanggung jawab dalam membimbing, mendampingi, dan memantau perkembangan peserta didik di kelas serta menciptakan suasana belajar yang nyaman, tertib, dan menyenangkan.",
+
+tugas: [
+    "Mengelola dan membimbing kegiatan peserta didik di kelas.",
+    "Membina kedisiplinan, karakter, dan akhlak peserta didik.",
+    "Memantau perkembangan akademik, sikap, dan kehadiran peserta didik.",
+    "Menjalin komunikasi dan kerja sama dengan orang tua peserta didik.",
+    "Mendukung terciptanya suasana kelas yang aman, nyaman, dan kondusif."
+],
+
+motto: "Mendidik dengan hati, membimbing dengan keteladanan."
         }
     ],
 
     guruMapel:[
         {
             name:"Ahmad Badali,S.Pd",
-            role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/KcMLR95Z/Pak-A-Badali.jpg"
+            role:"Guru Agama Islam & Koordinator Mapel",
+            foto:"https://i.ibb.co.com/KcMLR95Z/Pak-A-Badali.jpg",
+            deskripsi: "Bertanggung jawab dalam melaksanakan pembelajaran Pendidikan Agama sekaligus mengkoordinasikan pelaksanaan pembelajaran mata pelajaran untuk mendukung kualitas pembelajaran dan perkembangan peserta didik.",
+
+
+    tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum sekolah.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta akhlak mulia.",
+    "Mengkoordinasikan pelaksanaan pembelajaran bersama guru mata pelajaran.",
+    "Memfasilitasi koordinasi dan berbagi praktik baik antar guru mata pelajaran.",
+    "Memantau pelaksanaan dan perkembangan pembelajaran pada bidang yang dikoordinasikan.",
+    "Mendukung peningkatan kualitas pembelajaran dan pencapaian peserta didik."
+],
+
+motto: "Menguatkan iman, meningkatkan pembelajaran, dan membimbing dengan keteladanan."
         },
         {
             name:"Ahmad Rafi'i,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/CKxqJHkN/Pak-Rafii.jpg"
+            foto:"https://i.ibb.co.com/CKxqJHkN/Pak-Rafii.jpg",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Muhammad Ridha,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/M59tFmCV/Pak-Ridho.jpg"
+            foto:"https://i.ibb.co.com/M59tFmCV/Pak-Ridho.jpg",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Faradha Alfitri,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/7J6jZ0t3/Bu-Faradha.jpg"
+            foto:"https://i.ibb.co.com/7J6jZ0t3/Bu-Faradha.jpg",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Siti Fauziah,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/XxqL8CCS/bu-zia.jpg"
+            foto:"https://i.ibb.co.com/TM41dtNk/bu-zia1.png",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Siti Dalimah,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/prRJ1g2p/Chat-GPT-Image-10-Agu-2026-14-04-39.png"
+            foto:"https://i.ibb.co.com/prRJ1g2p/Chat-GPT-Image-10-Agu-2026-14-04-39.png",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Andini Kaniawati,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/Pzc03mW5/Bu-Andin.jpg"
+            foto:"https://i.ibb.co.com/Pzc03mW5/Bu-Andin.jpg",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Halimatus Sa'diah,S.Pd",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/5X7Y2BXM/Bu-Halimah.jpg"
+            foto:"https://i.ibb.co.com/SXTmDzJf/Bu-Halimah1.png",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Rabiatul Adawiah,S.Sos",
             role:"Guru Agama Islam",
-            foto:"https://i.ibb.co.com/Mxdn8X97/Bu-Rabi.jpg"
+            foto:"https://i.ibb.co.com/sJszMw0n/Bu-Rabi1.png",
+            deskripsi: "Membimbing peserta didik dalam memahami dan mengamalkan nilai-nilai agama serta membentuk pribadi yang beriman, bertakwa, dan berakhlak mulia.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Agama sesuai kurikulum.",
+    "Membimbing peserta didik dalam memahami dan mengamalkan ajaran agama.",
+    "Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia.",
+    "Memantau perkembangan pengetahuan, sikap, dan praktik keagamaan peserta didik.",
+    "Mendorong penerapan nilai-nilai agama dalam kehidupan sehari-hari."
+],
+
+motto: "Menanamkan iman, membentuk akhlak, dan membimbing dengan keteladanan."
         },
         {
             name:"Reni Herlina,S.Pd",
             role:"Guru B.Inggris",
-            foto:"https://i.ibb.co.com/GvNJ6M0q/Bu-Reni.jpg"
+            foto:"https://i.ibb.co.com/KptcNWG4/Bu-Reni1.png",
+            deskripsi: "Mengembangkan kemampuan peserta didik dalam berkomunikasi menggunakan Bahasa Inggris melalui kegiatan pembelajaran yang aktif, kreatif, dan menyenangkan.",
+
+tugas: [
+    "Melaksanakan pembelajaran Bahasa Inggris sesuai kurikulum.",
+    "Mengembangkan kemampuan menyimak, berbicara, membaca, dan menulis.",
+    "Mengenalkan kosakata dan ungkapan Bahasa Inggris dalam kehidupan sehari-hari.",
+    "Mendorong peserta didik untuk percaya diri menggunakan Bahasa Inggris.",
+    "Menciptakan kegiatan pembelajaran Bahasa Inggris yang menarik dan interaktif."
+],
+
+motto: "Learn, practice, and grow with confidence."
         },
         {
             name:"Dian Fransiska,S.Si",
             role:"Guru Komputer",
-            foto:"https://i.ibb.co.com/5xTCG8GV/Chat-GPT-Image-10-Agu-2026-14-19-35.png"
+            foto:"https://i.ibb.co.com/5xTCG8GV/Chat-GPT-Image-10-Agu-2026-14-19-35.png",
+            deskripsi: "Membimbing peserta didik dalam mengenal dan memanfaatkan teknologi informasi secara kreatif, aman, bertanggung jawab, dan sesuai dengan kebutuhan pembelajaran.",
+
+tugas: [
+    "Melaksanakan pembelajaran Teknologi Informasi dan Komunikasi.",
+    "Mengenalkan keterampilan dasar penggunaan teknologi kepada peserta didik.",
+    "Mengembangkan kemampuan berpikir logis, kreatif, dan sistematis.",
+    "Membimbing peserta didik menggunakan teknologi secara aman dan bertanggung jawab.",
+    "Mendorong pemanfaatan teknologi sebagai sarana belajar dan berkarya."
+],
+
+motto: "Belajar teknologi, berkarya dengan kreativitas, dan menggunakannya dengan bijak."
         },
         {
             name:"Dina Faurida Wati,S.Pd",
             role:"Guru B.Banjar",
-            foto:"https://i.ibb.co.com/k255rkkV/Bu-Dina-Cantik.jpg"
+            foto:"https://i.ibb.co.com/dw1h2vYY/Bu-Dina-Cantik1.png",
+            deskripsi: "Mengenalkan dan mengembangkan kemampuan peserta didik dalam Bahasa Banjar sekaligus menumbuhkan kecintaan terhadap bahasa, budaya, dan kearifan lokal daerah.",
+
+tugas: [
+    "Melaksanakan pembelajaran Bahasa Banjar.",
+    "Mengembangkan kemampuan peserta didik dalam menggunakan Bahasa Banjar.",
+    "Mengenalkan kosakata dan ungkapan Bahasa Banjar dalam kehidupan sehari-hari.",
+    "Menanamkan kecintaan terhadap bahasa dan budaya daerah.",
+    "Melestarikan bahasa dan kearifan lokal melalui kegiatan pembelajaran."
+],
+
+motto: "Mengenal bahasa, mencintai budaya, melestarikan warisan daerah."
         },
         {
             name:"Nurfa Fuspitasari,S.Pd",
             role:"Guru PJOK",
-            foto:"https://i.ibb.co.com/1GKNhp48/Bu-Nurfa.jpg"
+            foto:"https://i.ibb.co.com/Nd43TknW/Bu-Nurfa1.png",
+            deskripsi: "Mengembangkan kemampuan peserta didik dalam bidang olahraga dan kebugaran jasmani sekaligus menanamkan nilai disiplin, sportivitas, kerja sama, dan hidup sehat.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Jasmani, Olahraga, dan Kesehatan.",
+    "Mengembangkan keterampilan gerak dan kemampuan olahraga peserta didik.",
+    "Membiasakan pola hidup sehat dan aktif.",
+    "Menanamkan sikap disiplin, sportivitas, dan kerja sama.",
+    "Mengembangkan potensi dan bakat peserta didik di bidang olahraga."
+],
+
+motto: "Sehat tubuhnya, kuat karakternya, sportif dalam setiap langkah."
         },
         {
             name:"Syahriza Maulana,S.E",
             role:"Guru PJOK",
-            foto:"https://i.ibb.co.com/V0qcS4Gc/Chat-GPT-Image-10-Agu-2026-13-15-38.png"
+            foto:"https://i.ibb.co.com/V0qcS4Gc/Chat-GPT-Image-10-Agu-2026-13-15-38.png",
+            deskripsi: "Mengembangkan kemampuan peserta didik dalam bidang olahraga dan kebugaran jasmani sekaligus menanamkan nilai disiplin, sportivitas, kerja sama, dan hidup sehat.",
+
+tugas: [
+    "Melaksanakan pembelajaran Pendidikan Jasmani, Olahraga, dan Kesehatan.",
+    "Mengembangkan keterampilan gerak dan kemampuan olahraga peserta didik.",
+    "Membiasakan pola hidup sehat dan aktif.",
+    "Menanamkan sikap disiplin, sportivitas, dan kerja sama.",
+    "Mengembangkan potensi dan bakat peserta didik di bidang olahraga."
+],
+
+motto: "Sehat tubuhnya, kuat karakternya, sportif dalam setiap langkah."
         }
     ],
 
@@ -3496,92 +5361,304 @@
         {
             name:"Syarifuddin",
             role:"Koordinator Ummi",
-            foto:"https://i.ibb.co.com/V0vmfQHj/Ust-Syarif.jpg"
+            foto:"https://i.ibb.co.com/V0vmfQHj/Ust-Syarif.jpg",
+            deskripsi: "Bertanggung jawab dalam mengkoordinasikan, mengelola, dan mengevaluasi pelaksanaan pembelajaran Al-Qur’an dengan metode Ummi agar berjalan terarah, konsisten, dan sesuai dengan tujuan pembelajaran sekolah.",
+            tugas: [
+    "Mengkoordinasikan pelaksanaan program pembelajaran Ummi di sekolah.",
+    "Menyusun dan mengatur program serta jadwal pembelajaran Ummi.",
+    "Membina dan mendampingi guru Ummi dalam pelaksanaan pembelajaran.",
+    "Memantau perkembangan kemampuan membaca Al-Qur’an peserta didik.",
+    "Melakukan koordinasi dan evaluasi terhadap pelaksanaan program Ummi.",
+    "Mendorong peningkatan kualitas pembelajaran dan kompetensi guru Ummi."
+],
+motto: "Membangun generasi Qur’ani melalui pembelajaran yang terarah dan berkualitas."
         },
         {
             name:"Hariyadi,S.Pd",
             role:"Wakil Koordinator Ummi",
-            foto:"https://i.ibb.co.com/GvgJFpc0/Ust-Hariadi-removebg-preview.jpg"
+            foto:"https://i.ibb.co.com/GvgJFpc0/Ust-Hariadi-removebg-preview.jpg",
+            deskripsi: "Membantu Koordinator Ummi dalam mengkoordinasikan dan memastikan pelaksanaan pembelajaran Al-Qur’an dengan metode Ummi berjalan tertib, efektif, dan sesuai dengan program yang telah ditetapkan.",
+            tugas: [
+    "Membantu Koordinator dalam mengkoordinasikan program pembelajaran Ummi.",
+    "Mendampingi dan membantu guru Ummi dalam pelaksanaan pembelajaran.",
+    "Membantu memantau perkembangan kemampuan membaca Al-Qur’an peserta didik.",
+    "Membantu pelaksanaan evaluasi dan tindak lanjut pembelajaran Ummi.",
+    "Membantu memastikan kegiatan pembelajaran Ummi berjalan tertib dan sesuai jadwal.",
+    "Menggantikan atau mewakili Koordinator Ummi apabila diperlukan."
+],
+motto: "Bersama membimbing, bersama menguatkan, menuju generasi Qur’ani."
         },
         {
             name:"Muhammad Fuad Busairi,S.Pd.I",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/S4D6bQz0/ust-Fuad.jpg"
+            foto:"https://i.ibb.co.com/S4D6bQz0/ust-Fuad.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Muhammad Hairul Basar,S.Ag",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/s9SMhQsj/Ust-Basar-removebg-preview.jpg"
+            foto:"https://i.ibb.co.com/s9SMhQsj/Ust-Basar-removebg-preview.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Ammarullah",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/8Djv02WS/Ust-Kevin-removebg-preview.jpg"
+            foto:"https://i.ibb.co.com/8Djv02WS/Ust-Kevin-removebg-preview.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Muhammad Noor Jaya,S.Pd",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/Y4xJ1TJL/Pak-Jaya-removebg-preview.png"
+            foto:"https://i.ibb.co.com/Y4xJ1TJL/Pak-Jaya-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Arliana Nurul Hidayati",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/dwVw4WT5/Bu-Arli-removebg-preview.png"
+            foto:"https://i.ibb.co.com/dwVw4WT5/Bu-Arli-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Mona Al Yughna,S.Ag",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/bRqL866R/Bu-mona.jpg"
+            foto:"https://i.ibb.co.com/bRqL866R/Bu-mona.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Nor Rochmah",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/5g7hKXzb/Mba-Rochmah.jpg"
+            foto:"https://i.ibb.co.com/5g7hKXzb/Mba-Rochmah.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Siti Laily Medina",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/7tHPmr5H/Lili.jpg"
+            foto:"https://i.ibb.co.com/7tHPmr5H/Lili.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Nur Fitriana Salsabila",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/YTdWbVbr/Salsa-removebg-preview.jpg"
+            foto:"https://i.ibb.co.com/YTdWbVbr/Salsa-removebg-preview.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Maelina Nurul Safitri",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/vCnbjcPG/Meilina-removebg-preview.png"
+            foto:"https://i.ibb.co.com/vCnbjcPG/Meilina-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Ulil Rohmatil Azizah",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/8g6r67q3/Ibu-Ulil-removebg-preview.png"
+            foto:"https://i.ibb.co.com/8g6r67q3/Ibu-Ulil-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Jamiyatun Nisa,S.H.,M.H",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/G388rxzq/Jamiyatun-removebg-preview.png"
+            foto:"https://i.ibb.co.com/G388rxzq/Jamiyatun-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Rizqa Maulida,S.H.,M.H",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/q3Kk2kgP/Bu-rizqa.jpg"
+            foto:"https://i.ibb.co.com/q3Kk2kgP/Bu-rizqa.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Rina Muslihah",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/qLqJG9xH/Screenshot-2026-08-10-150435-removebg-preview.png"
+            foto:"https://i.ibb.co.com/qLqJG9xH/Screenshot-2026-08-10-150435-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Eka Norhayati,S.Pd",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/qY6hg0DL/Bu-Eka.jpg"
+            foto:"https://i.ibb.co.com/qY6hg0DL/Bu-Eka.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         },
         {
             name:"Raudatul Islamiah",
             role:"Guru Ummi",
-            foto:"https://i.ibb.co.com/G388rxzq/Jamiyatun-removebg-preview.png"
+            foto:"https://i.ibb.co.com/G388rxzq/Jamiyatun-removebg-preview.png",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
+        },
+        {
+            name:"Jubaidah Ratna",
+            role:"Guru Ummi",
+            foto:"https://i.ibb.co.com/gb27tgFz/Jubai-removebg-preview.jpg",
+            deskripsi: "Membimbing peserta didik dalam meningkatkan kemampuan membaca Al-Qur'an dengan baik dan benar melalui pembelajaran metode Ummi serta pembiasaan nilai-nilai Qur'ani.",
+
+tugas: [
+    "Membimbing peserta didik membaca Al-Qur'an sesuai metode Ummi.",
+    "Meningkatkan kemampuan membaca Al-Qur'an secara tartil dan benar.",
+    "Membimbing penguasaan bacaan sesuai tahapan pembelajaran Ummi.",
+    "Menanamkan kecintaan peserta didik terhadap Al-Qur'an.",
+    "Mendorong penerapan nilai-nilai Al-Qur'an dalam kehidupan sehari-hari."
+],
+
+motto: "Dekat dengan Al-Qur'an, baik bacaannya, mulia akhlaknya."
         }
         
     ],
@@ -3590,21 +5667,180 @@
         {
             name:"Muhammad Abdul Hadi",
             role:"Petugas Kebersihan",
-            foto:"https://i.ibb.co.com/xqF0DZgc/Paman-Hadi-removebg-preview.png"
+            foto:"https://i.ibb.co.com/xqF0DZgc/Paman-Hadi-removebg-preview.png",
+            deskripsi: "Bertanggung jawab dalam membantu menjaga kebersihan, keamanan, kenyamanan, dan kerapian lingkungan sekolah agar tercipta suasana belajar yang aman dan kondusif.",
+
+tugas: [
+    "Menjaga kebersihan dan kerapian lingkungan sekolah.",
+    "Membantu menjaga keamanan dan ketertiban lingkungan sekolah.",
+    "Merawat fasilitas dan lingkungan sekolah.",
+    "Membantu mempersiapkan kebutuhan kegiatan sekolah.",
+    "Mendukung terciptanya lingkungan sekolah yang aman, bersih, dan nyaman."
+],
+
+motto: "Sekolah bersih, lingkungan nyaman, belajar semakin menyenangkan."
         },
         {
             name:"Abdul Wahid",
             role:"Petugas Kebersihan",
-            foto:"https://i.ibb.co.com/VYkkPnN5/Abah-Lia-removebg-preview.png"
+            foto:"https://i.ibb.co.com/VYkkPnN5/Abah-Lia-removebg-preview.png",
+            deskripsi: "Bertanggung jawab dalam membantu menjaga kebersihan, keamanan, kenyamanan, dan kerapian lingkungan sekolah agar tercipta suasana belajar yang aman dan kondusif.",
+
+tugas: [
+    "Menjaga kebersihan dan kerapian lingkungan sekolah.",
+    "Membantu menjaga keamanan dan ketertiban lingkungan sekolah.",
+    "Merawat fasilitas dan lingkungan sekolah.",
+    "Membantu mempersiapkan kebutuhan kegiatan sekolah.",
+    "Mendukung terciptanya lingkungan sekolah yang aman, bersih, dan nyaman."
+],
+
+motto: "Sekolah bersih, lingkungan nyaman, belajar semakin menyenangkan."
         },
         {
             name:"Hafiz Ramadhani",
             role:"Petugas Kebersihan",
-            foto:"https://i.ibb.co.com/M59WhmDR/Paman-Hafiz.jpg"
+            foto:"https://i.ibb.co.com/M59WhmDR/Paman-Hafiz.jpg",
+            deskripsi: "Bertanggung jawab dalam membantu menjaga kebersihan, keamanan, kenyamanan, dan kerapian lingkungan sekolah agar tercipta suasana belajar yang aman dan kondusif.",
+
+tugas: [
+    "Menjaga kebersihan dan kerapian lingkungan sekolah.",
+    "Membantu menjaga keamanan dan ketertiban lingkungan sekolah.",
+    "Merawat fasilitas dan lingkungan sekolah.",
+    "Membantu mempersiapkan kebutuhan kegiatan sekolah.",
+    "Mendukung terciptanya lingkungan sekolah yang aman, bersih, dan nyaman."
+],
+
+motto: "Sekolah bersih, lingkungan nyaman, belajar semakin menyenangkan."
         }
     ]
 };
+/* ========================================
+   OPEN STAFF MODAL
+======================================== */
 
+function openStaffModal(name, role, image, tugas, deskripsi, motto) {
+
+    // NAMA
+    document.getElementById("staffModalName").textContent = name;
+
+    // JABATAN
+    document.getElementById("staffModalPosition").textContent = role;
+
+    // FOTO
+    document.getElementById("staffModalImage").src = image;
+    document.getElementById("staffModalImage").alt = name;
+
+    // DESKRIPSI
+    document.getElementById("staffModalDescription").textContent =
+        deskripsi ||
+        "Bagian dari keluarga besar SD Hasbunallah yang berkomitmen dalam mendukung proses pendidikan dan pelayanan terbaik bagi peserta didik.";
+
+    // =========================
+    // TUGAS
+    // =========================
+
+    const taskList =
+        document.getElementById("staffModalTasks");
+
+    taskList.innerHTML = "";
+
+    if (Array.isArray(tugas)) {
+
+        tugas.forEach(function(item) {
+
+            const li = document.createElement("li");
+
+            li.textContent = item;
+
+            taskList.appendChild(li);
+
+        });
+
+    } else if (
+        typeof tugas === "string" &&
+        tugas.trim() !== ""
+    ) {
+
+        const li = document.createElement("li");
+
+        li.textContent = tugas;
+
+        taskList.appendChild(li);
+
+    } else {
+
+        taskList.innerHTML = `
+            <li>Melaksanakan tugas sesuai bidang dan tanggung jawab.</li>
+            <li>Mendukung kegiatan pendidikan di SD Hasbunallah.</li>
+            <li>Berkontribusi dalam menciptakan lingkungan sekolah yang positif.</li>
+        `;
+
+    }
+
+    // =========================
+    // MOTTO
+    // =========================
+
+    document.getElementById("staffModalMotto").textContent =
+        motto ||
+        "Bekerja dengan amanah, melayani dengan sepenuh hati.";
+
+    // =========================
+    // TAMPILKAN MODAL
+    // =========================
+
+    document
+        .getElementById("staffModal")
+        .classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+/* ========================================
+   CLOSE STAFF MODAL
+======================================== */
+
+function closeStaffModal() {
+
+    document
+        .getElementById("staffModal")
+        .classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+/* ========================================
+   KLIK DI LUAR MODAL
+======================================== */
+
+document
+    .getElementById("staffModal")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+
+            closeStaffModal();
+
+        }
+
+    });
+
+
+/* ========================================
+   TOMBOL ESC
+======================================== */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeStaffModal();
+
+    }
+
+});
         function renderStaff(category) {
             const container = document.getElementById('staffGrid');
             const tabs = document.querySelectorAll('.staff-tab-btn');
@@ -3625,51 +5861,114 @@
                 // Render Kepala Sekolah Terpisah di Atas
                 const ks = staffData.pimpinan.kepala;
                 const ksDiv = document.createElement('div');
-                ksDiv.className = 'flex justify-center mb-8 fade-in-up';
-                ksDiv.innerHTML = `
-                    <div class="bg-white border-2 border-brand-500 rounded-2xl p-6 text-center shadow-xl w-full max-w-xs transform hover:-translate-y-1 transition-all duration-300">
-                        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto mb-4">
-                            <img src="https://i.ibb.co.com/d4GfY0gC/Bu-Fatim.jpg" alt="Kepala Sekolah" class="w-full h-full object-cover" style="object-position: center 20%;">
-                        </div>
-                        <h4 class="font-heading font-bold text-slate-900 text-lg mb-1">${ks.name}</h4>
-                        <p class="text-sm text-brand-600 font-semibold uppercase tracking-wider">${ks.role}</p>
-                    </div>
-                `;
+
+ksDiv.className = 'flex justify-center mb-8 fade-in-up';
+
+ksDiv.innerHTML = `
+    <div class="bg-white border-2 border-brand-500 rounded-2xl p-6 text-center shadow-xl w-full max-w-xs transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+
+        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto mb-4">
+
+            <img
+                src="https://i.ibb.co.com/d4GfY0gC/Bu-Fatim.jpg"
+                alt="${ks.name}"
+                class="w-full h-full object-cover"
+                style="object-position: center 20%;"
+            >
+
+        </div>
+
+        <h4 class="font-heading font-bold text-slate-900 text-lg mb-1">
+            ${ks.name}
+        </h4>
+
+        <p class="text-sm text-brand-600 font-semibold uppercase tracking-wider">
+            ${ks.role}
+        </p>
+
+    </div>
+`;
+ksDiv.addEventListener('click', function () {
+
+    openStaffModal(
+        ks.name,
+        ks.role,
+        'https://i.ibb.co.com/d4GfY0gC/Bu-Fatim.jpg',
+
+        "Memimpin dan mengarahkan seluruh kegiatan pendidikan dan pengelolaan sekolah untuk mendukung tercapainya visi dan tujuan SD Hasbunallah.",
+
+        [
+            "Memimpin pengelolaan dan penyelenggaraan pendidikan di sekolah.",
+            "Mengarahkan dan membina guru serta tenaga kependidikan.",
+            "Mengawasi pelaksanaan program dan kegiatan sekolah.",
+            "Menjalin kerja sama dengan orang tua dan masyarakat.",
+            "Menciptakan lingkungan sekolah yang aman, nyaman, dan kondusif."
+        ],
+
+        "Memimpin dengan amanah, melayani dengan keteladanan."
+    );
+
+});
                 container.appendChild(ksDiv);
 
                 // Render Grid untuk Wakil Kepala Sekolah dan Staf Lainnya
                 const gridDiv = document.createElement('div');
                 gridDiv.className = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6';
                 
-                staffData.pimpinan.lainnya.forEach((staff, index) => {
-                    const delay = (index % 10) * 50; 
-                    const card = document.createElement('div');
-                    card.className = `bg-white border border-slate-100 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl hover:border-brand-300 transition-all duration-300 transform hover:-translate-y-1 fade-in-up`;
-                    card.style.animationDelay = `${delay}ms`;
-                    
-                    card.innerHTML = `
-<div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-slate-200 shadow mb-4">
+               staffData.pimpinan.lainnya.forEach((staff, index) => {
 
-<img
-src="${staff.foto}"
-alt="${staff.name}"
-class="w-full h-full object-cover"
-style="object-position:center 20%;"
-onerror="this.src='https://placehold.co/200x200?text=Foto';">
+    const delay = (index % 10) * 50;
 
-</div>
+    const card = document.createElement('div');
 
-<h4 class="font-heading font-semibold text-slate-800 text-sm mb-1">
-${staff.name}
-</h4>
+    card.className = `
+        bg-white border border-slate-100 rounded-2xl p-5 text-center
+        shadow-sm hover:shadow-xl hover:border-brand-300
+        transition-all duration-300 transform hover:-translate-y-1
+        fade-in-up cursor-pointer
+    `;
 
-<p class="text-xs text-brand-600 font-medium">
-${staff.role}
-</p>
-`;
+    card.style.animationDelay = `${delay}ms`;
 
-gridDiv.appendChild(card);
-                });
+    card.innerHTML = `
+        <div class="w-20 h-20 mx-auto rounded-full overflow-hidden
+                    border-2 border-slate-200 shadow mb-4">
+
+            <img
+                src="${staff.foto}"
+                alt="${staff.name}"
+                class="w-full h-full object-cover"
+                style="object-position:center 20%;"
+                onerror="this.src='https://placehold.co/200x200?text=Foto';"
+            >
+
+        </div>
+
+        <h4 class="font-heading font-semibold text-slate-800 text-sm mb-1">
+            ${staff.name}
+        </h4>
+
+        <p class="text-xs text-brand-600 font-medium">
+            ${staff.role}
+        </p>
+    `;
+
+    // KLIK KARTU
+    card.addEventListener('click', function () {
+
+    openStaffModal(
+        staff.name,
+        staff.role,
+        staff.foto,
+        staff.tugas,
+        staff.deskripsi,
+        staff.motto
+    );
+
+});
+
+    gridDiv.appendChild(card);
+});
                 container.appendChild(gridDiv);
 
             } else {
@@ -3677,34 +5976,61 @@ gridDiv.appendChild(card);
                 const gridDiv = document.createElement('div');
                 gridDiv.className = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6';
 
-                staffData[category].forEach((staff, index) => {
-                    const delay = (index % 10) * 50; 
-                    const card = document.createElement('div');
-                    card.className = `bg-white border border-slate-100 rounded-2xl p-5 text-center shadow-sm hover:shadow-xl hover:border-brand-300 transition-all duration-300 transform hover:-translate-y-1 fade-in-up`;
-                    card.style.animationDelay = `${delay}ms`;
-                    
-                    card.innerHTML = `
-<div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-slate-200 shadow mb-4">
+               staffData[category].forEach((staff, index) => {
 
-<img
-src="${staff.foto}"
-alt="${staff.name}"
-class="w-full h-full object-cover"
-style="object-position:center 20%;"
-onerror="this.src='https://placehold.co/200x200?text=Foto';">
+    const delay = (index % 10) * 50;
 
-</div>
+    const card = document.createElement('div');
 
-<h4 class="font-heading font-semibold text-slate-800 text-sm mb-1">
-${staff.name}
-</h4>
+    card.className = `
+        bg-white border border-slate-100 rounded-2xl p-5 text-center
+        shadow-sm hover:shadow-xl hover:border-brand-300
+        transition-all duration-300 transform hover:-translate-y-1
+        fade-in-up cursor-pointer
+    `;
 
-<p class="text-xs text-brand-600 font-medium">
-${staff.role}
-</p>
-`;
-                    gridDiv.appendChild(card);
-                });
+    card.style.animationDelay = `${delay}ms`;
+
+    card.innerHTML = `
+        <div class="w-20 h-20 mx-auto rounded-full overflow-hidden
+                    border-2 border-slate-200 shadow mb-4">
+
+            <img
+                src="${staff.foto}"
+                alt="${staff.name}"
+                class="w-full h-full object-cover"
+                style="object-position:center 20%;"
+                onerror="this.src='https://placehold.co/200x200?text=Foto';"
+            >
+
+        </div>
+
+        <h4 class="font-heading font-semibold text-slate-800 text-sm mb-1">
+            ${staff.name}
+        </h4>
+
+        <p class="text-xs text-brand-600 font-medium">
+            ${staff.role}
+        </p>
+    `;
+
+    // KLIK KARTU
+    card.addEventListener('click', function () {
+
+    openStaffModal(
+        staff.name,
+        staff.role,
+        staff.foto,
+        staff.tugas,
+        staff.deskripsi,
+        staff.motto
+    );
+
+});
+
+    gridDiv.appendChild(card);
+
+});
                 container.appendChild(gridDiv);
             }
         }
@@ -3954,6 +6280,71 @@ ${staff.role}
             </p>
         `
     },    
+    berita8: {
+
+        category: "Kegiatan Kepemimpinan",
+
+        date: "14 Agustus 2026",
+
+        title: "Semarak Hari Pramuka, SD Hasbunallah Gelar Upacara Peringatan ke-65",
+
+        image: "https://i.ibb.co.com/GQH35XGV/pramuka1.jpg",
+
+        content: `
+            <p class="mb-4">
+                Dalam rangka memperingati Hari Pramuka yang ke-65, SD Hasbunallah melaksanakan upacara 
+                peringatan Hari Pramuka pada Jumat, 14 Agustus 2026. Kegiatan berlangsung dengan penuh 
+                khidmat dan semangat, serta diikuti oleh seluruh warga sekolah.
+            </p>
+
+            <p class="mb-4">
+                Pelaksanaan upacara menjadi momentum untuk menanamkan nilai-nilai kepramukaan kepada 
+                peserta didik, seperti kedisiplinan, kemandirian, tanggung jawab, kerja sama, 
+                serta cinta tanah air.
+            </p>
+
+            <p>
+                Melalui peringatan Hari Pramuka ini, SD Hasbunallah berharap semangat “Satyaku Kudarmakan, 
+                Darmaku Kubaktikan” dapat terus tumbuh dalam diri setiap peserta didik, sehingga mereka 
+                menjadi generasi yang berkarakter, tangguh, mandiri, dan siap memberikan kontribusi positif
+                bagi lingkungan serta bangsa.
+                Salam Pramuka! 🏕️
+            </p>
+        `
+    },  
+    berita9: {
+
+        category: "Kegiatan Kemerdekaan",
+
+        date: "18-20 Agustus 2026",
+
+        title: "SD Hasbunallah Rayakan HUT Kemerdekaan dengan Beragam Lomba dan Doorprize",
+
+        image: "https://i.ibb.co.com/6ct3S0NW/doorprize1.jpg",
+
+        content: `
+            <p class="mb-4">
+                Dalam rangka memperingati Hari Kemerdekaan Republik Indonesia, SD Hasbunallah mengadakan 
+                rangkaian kegiatan kemerdekaan selama tiga hari yang berlangsung meriah dan penuh 
+                kebersamaan. Kegiatan ini diikuti oleh peserta didik, guru, serta orang tua siswa.
+            </p>
+
+            <p class="mb-4">
+                Berbagai perlombaan diselenggarakan untuk menambah keceriaan sekaligus mempererat 
+                hubungan antara seluruh warga sekolah. Tidak hanya peserta didik, para guru dan 
+                orang tua juga turut berpartisipasi dalam berbagai lomba yang telah disiapkan.
+            </p>
+
+            <p>
+                Kegiatan semakin menarik dengan adanya pembagian doorprize bagi para peserta. 
+                Momen ini menjadi kesempatan bagi seluruh keluarga besar SD Hasbunallah untuk
+                berkumpul, bersenang-senang, dan menumbuhkan rasa kebersamaan dalam suasana 
+                perayaan kemerdekaan.Melalui kegiatan ini, SD Hasbunallah berharap semangat 
+                kemerdekaan dapat terus tumbuh dalam diri peserta didik, sekaligus memperkuat 
+                nilai persatuan, gotong royong, sportivitas, dan kebersamaan di lingkungan sekolah.
+            </p>
+        `
+    },  
 
 };
 function openBerita(id) {
@@ -4030,7 +6421,7 @@ function kirimKeWhatsApp(event) {
 
     // NOMOR WHATSAPP SD HASBUNALLAH
     // GANTI DENGAN NOMOR WHATSAPP SEKOLAH
-    const nomorSekolah = "62882020246692";
+    const nomorSekolah = "6282213726403";
 
     // Susunan pesan WhatsApp
     const pesanWhatsApp = 
@@ -4055,32 +6446,6 @@ Terima kasih.`;
     window.open(url, "_blank");
 }
 
-// =====================================
-// SLIDER PRESTASI
-// =====================================
-
-const prestasiSlider = document.getElementById("prestasiSlider");
-const prestasiPrev = document.getElementById("prestasiPrev");
-const prestasiNext = document.getElementById("prestasiNext");
-
-prestasiNext.addEventListener("click", function () {
-
-    prestasiSlider.scrollBy({
-        left: 330,
-        behavior: "smooth"
-    });
-
-});
-
-
-prestasiPrev.addEventListener("click", function () {
-
-    prestasiSlider.scrollBy({
-        left: -330,
-        behavior: "smooth"
-    });
-
-});
 
 
 // =====================================
@@ -4268,7 +6633,1027 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/* =========================================================
+   DATA PRESTASI
+========================================================= */
 
+const prestasiData = [
+
+    {
+        title: "Juara 2 O2SN Atletik Putri",
+        level: "Tingkat Provinsi",
+        filter: "provinsi",
+
+        description:
+            "Olimpiade Olahraga Siswa Nasional (O2SN) Provinsi Kalimantan Selatan 2026.",
+
+        student: "Mahira Hasna Kamila",
+
+        image:
+            "https://i.ibb.co.com/nMFw4FH7/mahira-02sn.jpg",
+
+        icon: "fa-trophy"
+    },
+
+
+    {
+        title: "Juara 3 O2SN Bulu Tangkis Putri",
+        level: "Tingkat Provinsi",
+        filter: "provinsi",
+
+        description:
+            "Olimpiade Olahraga Siswa Nasional (O2SN) Tingkat SD se-Kalimantan Selatan.",
+
+        student: "Khairunnisa Salsabila",
+
+        image:
+            "https://i.ibb.co.com/PZfQ4Vkg/caca-o3sn.jpg",
+
+        icon: "fa-medal"
+    },
+
+
+    {
+        title: "Juara 1 Lomba Tartil Putra",
+        level: "Event Sekolah",
+        filter: "sekolah",
+
+        description:
+            "HUT ke-54 SMP Plus Murung Pudak Tabalong Tahun 2026.",
+
+        student: "Rifqi Zidan Farras",
+
+        image:
+            "https://i.ibb.co.com/svqdh21Q/tartil-zidan.jpg",
+
+        icon: "fa-medal"
+    },
+
+
+    {
+        title: "Juara 1 Lomba Tartil Putri",
+        level: "Event Sekolah",
+        filter: "sekolah",
+
+        description:
+            "HUT ke-54 SMP Plus Murung Pudak Tabalong Tahun 2026.",
+
+        student: "Humaira Nurhafizah",
+
+        image:
+            "https://i.ibb.co.com/JFd90SqN/tartil-hafizah.jpg",
+
+        icon: "fa-palette"
+    },
+
+
+    {
+        title: "Juara 2 FLS3N Tari Kelompok",
+        level: "Tingkat Kabupaten",
+        filter: "kabupaten",
+
+        description:
+            "Festival Lomba Seni dan Sastra tingkat Kabupaten Tabalong.",
+
+        student: "Alifah, Adiba dan Khansa",
+
+        image:
+            "https://i.ibb.co.com/Y7h5hS7C/menari.jpg",
+
+        icon: "fa-music"
+    },
+
+
+    {
+        title: "Juara 1 Lomba Adzan",
+        level: "Event Nurul Musthofa Islamic Fest",
+        filter: "sekolah",
+
+        description:
+            "Festival Islam Pondok Pesantren Nurul Musthofa.",
+
+        student: "Rifqi Zidan Farras",
+
+        image:
+            "https://i.ibb.co.com/Zz2d9Fjf/adzan-NM.jpg",
+
+        icon: "fa-quran"
+    },
+    {
+        title: "Juara 1 FLS3N Kriya",
+        level: "Tingkat Kabupaten",
+        filter: "Kabupaten",
+
+        description:
+            "Festival Lomba Seni dan Sastra tingkat Kabupaten Tabalong.",
+
+        student: "Farah Nor Alifah",
+
+        image:
+            "https://i.ibb.co.com/TDCxcNxQ/kriya-1.jpg",
+
+        icon: "fa-trophy"
+    },
+    {
+        title: "Juara 1 Lomba IPA Olimpiade Sains Genza Education",
+        level: "Tingkat Kabupaten",
+        filter: "Kabupaten",
+
+        description:
+            "Olimpiade Sains Genza tingkat Kabupaten Tabalong.",
+
+        student: "Juan Firas Al-Fatih",
+
+        image:
+            "https://i.ibb.co.com/3J2Nb52/genza.jpg",
+
+        icon: "fa-trophy"
+    },
+    {
+        title: "Juara Harapan-2 Lomba Tilawah FASI",
+        level: "Tingkat Kabupaten",
+        filter: "Kabupaten",
+
+        description:
+            "Festival Anak Sholeh Indonesia (FASI) ke-16 Tingkat Kabupaten Tabalong Tahun 2026.",
+
+        student: "Humaira Nurhafizah",
+
+        image:
+            "https://i.ibb.co.com/DfX0MdnS/harapan-2-tilawah.jpg",
+
+        icon: "fa-trophy"
+    },
+    {
+        title: "Juara 2 Lomba Menggambar FASI",
+        level: "Tingkat Kabupaten",
+        filter: "Kabupaten",
+
+        description:
+            "Festival Anak Sholeh Indonesia (FASI) ke-16 Tingkat Kabupaten Tabalong Tahun 2026.",
+
+        student: "Inara Mikayla Ilhami",
+
+        image:
+            "https://i.ibb.co.com/p6GDH0tq/Juara-2-lomba-menggambar.jpg",
+
+        icon: "fa-trophy"
+    },
+
+];
+
+
+/* =========================================================
+   SETTING PAGINATION
+========================================================= */
+
+const prestasiPerPage = 6;
+
+let prestasiCurrentPage = 1;
+
+let prestasiCurrentFilter = "semua";
+
+
+/* =========================================================
+   ELEMENT
+========================================================= */
+
+const prestasiGrid =
+    document.getElementById("prestasiGrid");
+
+const prestasiInfo =
+    document.getElementById("prestasiInfo");
+
+const prestasiPagination =
+    document.getElementById("prestasiPagination");
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+function getFilteredPrestasi() {
+
+    if (prestasiCurrentFilter === "semua") {
+        return prestasiData;
+    }
+
+    return prestasiData.filter(
+        item =>
+            item.filter === prestasiCurrentFilter
+    );
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+function renderPrestasi() {
+
+    const data =
+        getFilteredPrestasi();
+
+    const totalData =
+        data.length;
+
+    const totalPages =
+        Math.ceil(
+            totalData /
+            prestasiPerPage
+        );
+
+
+    /* Pastikan halaman valid */
+
+    if (
+        prestasiCurrentPage > totalPages &&
+        totalPages > 0
+    ) {
+        prestasiCurrentPage = totalPages;
+    }
+
+
+    const start =
+        (prestasiCurrentPage - 1) *
+        prestasiPerPage;
+
+
+    const pageData =
+        data.slice(
+            start,
+            start + prestasiPerPage
+        );
+
+
+    /* =====================================================
+       TAMPILKAN CARD
+    ===================================================== */
+
+    if (pageData.length === 0) {
+
+        prestasiGrid.innerHTML = `
+            <div class="prestasi-empty">
+                Belum ada prestasi.
+            </div>
+        `;
+
+    } else {
+
+       prestasiGrid.innerHTML =
+    pageData
+        .map(item => createPrestasiCard(item))
+        .join("");
+    }
+
+
+    /* =====================================================
+       INFO
+    ===================================================== */
+
+    if (totalData > 0) {
+
+        const from =
+            start + 1;
+
+        const to =
+            Math.min(
+                start +
+                prestasiPerPage,
+                totalData
+            );
+
+        prestasiInfo.textContent =
+            `Menampilkan ${from}–${to} dari ${totalData} prestasi`;
+
+    } else {
+
+        prestasiInfo.textContent =
+            "Tidak ada prestasi";
+
+    }
+
+
+    /* =====================================================
+       PAGINATION
+    ===================================================== */
+
+    renderPrestasiPagination(
+        totalPages
+    );
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+function createPrestasiCard(item) {
+
+    return `
+        <article class="prestasi-card">
+
+            <div class="prestasi-card-content">
+
+                <div class="prestasi-icon">
+                    <i class="fa-solid ${item.icon}"></i>
+                </div>
+
+                <span class="prestasi-level">
+                    ${item.level}
+                </span>
+
+                <h3>
+                    ${item.title}
+                </h3>
+
+                <p>
+                    ${item.description}
+                </p>
+
+                <button
+                    type="button"
+                    class="prestasi-detail"
+                    onclick='openPrestasiModal(
+                        ${JSON.stringify(item.title)},
+                        ${JSON.stringify(item.level)},
+                        ${JSON.stringify(item.description)},
+                        ${JSON.stringify(item.student)},
+                        ${JSON.stringify(item.image)}
+                    )'
+                >
+                    <span>Lihat detail</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="prestasi-photo">
+                <img
+                    src="${item.image}"
+                    alt="${item.student}"
+                    loading="lazy"
+                >
+            </div>
+
+        </article>
+    `;
+}
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+function renderPrestasiPagination(totalPages) {
+
+    if (totalPages <= 1) {
+
+        prestasiPagination.innerHTML = "";
+
+        return;
+    }
+
+
+    let html = "";
+
+
+    /* PREVIOUS */
+
+    html += `
+        <button
+            type="button"
+            class="page-btn"
+            ${prestasiCurrentPage === 1 ? "disabled" : ""}
+            onclick="changePrestasiPage(${prestasiCurrentPage - 1})"
+        >
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    `;
+
+
+    /* NOMOR HALAMAN */
+
+    for (
+        let page = 1;
+        page <= totalPages;
+        page++
+    ) {
+
+        /*
+         * Kalau halaman <= 7,
+         * tampilkan semua nomor.
+         */
+
+        if (totalPages <= 7) {
+
+            html += `
+                <button
+                    type="button"
+                    class="page-btn ${
+                        page === prestasiCurrentPage
+                            ? "active"
+                            : ""
+                    }"
+                    onclick="changePrestasiPage(${page})"
+                >
+                    ${page}
+                </button>
+            `;
+
+            continue;
+        }
+
+
+        /*
+         * Kalau halaman banyak:
+         * 1 2 3 ... 8
+         */
+
+        if (
+            page <= 3 ||
+            page === totalPages
+        ) {
+
+            html += `
+                <button
+                    type="button"
+                    class="page-btn ${
+                        page === prestasiCurrentPage
+                            ? "active"
+                            : ""
+                    }"
+                    onclick="changePrestasiPage(${page})"
+                >
+                    ${page}
+                </button>
+            `;
+
+        } else if (page === 4) {
+
+            html += `
+                <span class="page-dots">
+                    ...
+                </span>
+            `;
+        }
+
+    }
+
+
+    /* NEXT */
+
+    html += `
+        <button
+            type="button"
+            class="page-btn"
+            ${
+                prestasiCurrentPage === totalPages
+                    ? "disabled"
+                    : ""
+            }
+            onclick="changePrestasiPage(${prestasiCurrentPage + 1})"
+        >
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    `;
+
+
+    prestasiPagination.innerHTML =
+        html;
+}
+
+
+/* =========================================================
+   GANTI HALAMAN
+========================================================= */
+
+function changePrestasiPage(page) {
+
+    const data =
+        getFilteredPrestasi();
+
+    const totalPages =
+        Math.ceil(
+            data.length /
+            prestasiPerPage
+        );
+
+
+    if (
+        page < 1 ||
+        page > totalPages
+    ) {
+        return;
+    }
+
+
+    prestasiCurrentPage =
+        page;
+
+
+    renderPrestasi();
+
+
+    /*
+     * Kembali ke bagian atas
+     * section prestasi.
+     */
+
+    const section =
+        document.getElementById("prestasi");
+
+    if (section) {
+
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+}
+
+
+/* =========================================================
+   FILTER BUTTON
+========================================================= */
+
+filterButtons.forEach(
+    button => {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                filterButtons.forEach(
+                    btn =>
+                        btn.classList
+                            .remove("active")
+                );
+
+
+                this.classList
+                    .add("active");
+
+
+                prestasiCurrentFilter =
+                    this.dataset.filter;
+
+
+                prestasiCurrentPage =
+                    1;
+
+
+                renderPrestasi();
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   JALANKAN
+========================================================= */
+
+if (prestasiGrid) {
+
+    renderPrestasi();
+
+}
+/* =========================================================
+   KLIK LIHAT DETAIL
+   Menggunakan MODAL PRESTASI LAMA
+========================================================= */
+
+prestasiGrid.addEventListener("click", function (event) {
+
+    const button =
+        event.target.closest(".prestasi-detail");
+
+    if (!button) {
+        return;
+    }
+
+    const card =
+        button.closest(".prestasi-card");
+
+    if (!card) {
+        return;
+    }
+
+    const index =
+        Number(
+            card.dataset.prestasiIndex
+        );
+
+    const item =
+        prestasiData[index];
+
+    if (!item) {
+        console.error(
+            "Data prestasi tidak ditemukan:",
+            index
+        );
+
+        return;
+    }
+
+
+    // BUKA MODAL LAMA
+    openPrestasiModal(
+        item.title,
+        item.level,
+        item.description,
+        item.student,
+        item.image
+    );
+
+});
+/* =========================
+   DATA PROGRAM
+========================= */
+
+const programData = {
+
+    ummi: {
+        title: "Metode Ummi (Khatmul Qur'an)",
+        icon: "📖",
+
+        description:
+            "Metode pembelajaran membaca Al-Qur'an secara tartil. Diikuti dengan ujian Imtihan untuk memastikan kualitas bacaan dan hafalan juz siswa.",
+
+        images: [
+            "https://i.ibb.co.com/nqWN1TNt/ummi.jpg",
+            "https://i.ibb.co.com/HLRScQFv/ummi3.jpg",
+            "https://i.ibb.co.com/0yKw6yP2/ummi4.jpg",
+            "https://i.ibb.co.com/jZwHzCDR/khataman-ramadhan.jpg",
+            "https://i.ibb.co.com/DD7HXLXF/ummi3.jpg",
+            "https://i.ibb.co.com/v6Xt36Tk/tilawah.jpg"
+        ]
+    },
+
+    haji: {
+        title: "Manasik Haji Tahunan",
+        icon: "🎓",
+
+        description:
+            "Kegiatan praktik langsung ibadah haji di Islamic Center Tabalong guna mengenalkan rukun Islam kelima dan menanamkan nilai spiritual sejak dini.",
+
+        images: [
+            "https://i.ibb.co.com/VXHj1k8/IMG-20260602-085134.jpg",
+            "https://i.ibb.co.com/W4hHmB1G/IMG-20260602-083747.jpg",
+            "https://i.ibb.co.com/gbyHsqBc/20260602-075309.jpg",
+            "https://i.ibb.co.com/yz7XYb5/IMG-20260602-081743.jpg",
+            "https://i.ibb.co.com/JWNDVPXb/IMG-20260602-080413.jpg",
+            "https://i.ibb.co.com/gZqtXtJ8/IMG-20260602-083736.jpg",
+            "https://i.ibb.co.com/7JbZYmW7/IMG-20260602-084843.jpg"
+        ]
+    },
+
+    iptek: {
+        title: "Pendidikan IPTEK",
+        icon: "💻",
+
+        description:
+            "Siswa diperkenalkan dengan dasar-dasar ilmu pengetahuan dan teknologi agar siap bersaing dan melek teknologi.",
+
+        images: [
+            "https://i.ibb.co.com/bgNLzKjM/lab.jpg",
+            "https://i.ibb.co.com/Xkj16kQq/lab4.jpg",
+            "https://i.ibb.co.com/Wv9dFnVN/lab5.jpg",
+            "https://i.ibb.co.com/S7xgcJzM/lab6.jpg",
+            "https://i.ibb.co.com/v412zR8f/lab8.jpg",
+            "https://i.ibb.co.com/2YZ91HyW/lab7.jpg",
+            "https://i.ibb.co.com/8n2Z7Ygs/lab2.jpg",
+            "https://i.ibb.co.com/C3dXtvPR/lab3.jpg"
+        ]
+    },
+
+    lingkungan: {
+        title: "Sekolah Peduli Lingkungan",
+        icon: "🌱",
+
+        description:
+            "Membudayakan cinta lingkungan melalui program kebersihan, pengelolaan sampah, dan pembiasaan hidup sehat.",
+
+        images: [
+            "https://i.ibb.co.com/DPr8TFk2/bersih-lingkungan.jpg",
+            "https://i.ibb.co.com/kgRdN7GT/bersih2.jpg",
+            "https://i.ibb.co.com/0VtzpbkT/bersih-lingkungan1.jpg",
+            "https://i.ibb.co.com/gbgnt7cN/bersih-lingkungan2.jpg"
+        ]
+    },
+
+    family: {
+        title: "Family Gathering",
+        icon: "👨‍👩‍👧",
+
+        description:
+            "Kegiatan yang melibatkan wali murid untuk mempererat silaturahmi, membentuk pribadi yang bersosial tinggi dan kuat dalam kekeluargaan.",
+
+        images: [
+            "https://i.ibb.co.com/fYnYXRd6/20260523-082817.jpg",
+            "https://i.ibb.co.com/KzGHDBfw/20260523-082811-1.jpg",
+            "https://i.ibb.co.com/5gwTRwW0/20260523-081715.jpg",
+            "https://i.ibb.co.com/zTgjSJhh/20260523-080804.jpg",
+            "https://i.ibb.co.com/7df7JYwF/20260523-075812.jpg",
+            "https://i.ibb.co.com/gZJXW8F4/20260523-091151.jpg",
+            "https://i.ibb.co.com/WWPXXwMP/20260523-092110.jpg",
+            "https://i.ibb.co.com/ccQdgm6b/20260523-105158.jpg",
+            "https://i.ibb.co.com/1fTC6cRX/20260523-081147.jpg",
+            "https://i.ibb.co.com/JFtjyYYg/20260523-091931.jpg",
+            "https://i.ibb.co.com/fBbNVGZ/20260523-080405.jpg",
+            "https://i.ibb.co.com/0RNK5JYr/20260523-080628.jpg",
+        ]
+    },
+
+    fullday: {
+        title: "Full Day School",
+        icon: "🏫",
+
+        description:
+            "Pembelajaran selama 5 hari penuh yang memaksimalkan waktu anak di sekolah dengan lingkungan yang aman, nyaman, dan edukatif dan dengan berbagai kegiatan ekstrakurikuler yang menarik.",
+
+        images: [
+            "https://i.ibb.co.com/YFCKSW65/penyambutan.jpg",
+            "https://i.ibb.co.com/FkmJTscp/sholat1.jpg",
+            "https://i.ibb.co.com/fVVJK5Tn/istirahat.jpg",
+            "https://i.ibb.co.com/Z66Kn7gS/belajar.jpg",
+            "https://i.ibb.co.com/JjbFkWYm/sholat-dhuha.jpg",
+            "https://i.ibb.co.com/DDnP1Vb0/panahan.jpg",
+            "https://i.ibb.co.com/Z1KVkrpr/silat.jpg",
+            "https://i.ibb.co.com/bMkXr14V/futsal.jpg",
+            "https://i.ibb.co.com/MxykZ0ms/panahan2.jpg",
+            "https://i.ibb.co.com/PZCvfVqy/menyanyi.jpg",
+            "https://i.ibb.co.com/WNV1Tkw8/ips.jpg",
+            "https://i.ibb.co.com/hnmYCk8/ipa.jpg",
+            "https://i.ibb.co.com/sJ3YQZLL/mtl.jpg",
+            "https://i.ibb.co.com/8gtn6KQZ/karate.jpg",
+            "https://i.ibb.co.com/3ygyHqpn/menari.jpg",
+            "https://i.ibb.co.com/LzzRGMZz/habsyi.jpg",
+            "https://i.ibb.co.com/hJC0GX4m/kriya.jpg",
+            "https://i.ibb.co.com/j90vnwnd/angklung.jpg",
+            "https://i.ibb.co.com/DDWBvBQN/mtk.jpg",
+            "https://i.ibb.co.com/MY3X7Xg/badmin.jpg",
+            "https://i.ibb.co.com/Y4Crkwfd/pramuka1.jpg"
+
+        ]
+    }
+
+};
+
+
+/* =========================
+   VARIABLE
+========================= */
+
+let currentProgram = null;
+let currentGalleryPage = 1;
+
+const photosPerPage = 8;
+
+
+/* =========================
+   ELEMENT
+========================= */
+
+const programModal =
+    document.getElementById("programModal");
+
+const modalTitle =
+    document.getElementById("modalTitle");
+
+const modalDescription =
+    document.getElementById("modalDescription");
+
+const modalIcon =
+    document.getElementById("modalIcon");
+
+const programGallery =
+    document.getElementById("programGallery");
+
+const galleryPage =
+    document.getElementById("galleryPage");
+
+const galleryPrev =
+    document.getElementById("galleryPrev");
+
+const galleryNext =
+    document.getElementById("galleryNext");
+
+
+/* =========================
+   OPEN MODAL
+========================= */
+
+function openProgramModal(program) {
+
+    const data = programData[program];
+
+    if (!data) {
+        console.log("Program tidak ditemukan:", program);
+        return;
+    }
+
+    currentProgram = program;
+    currentGalleryPage = 1;
+
+    modalTitle.textContent = data.title;
+
+    modalDescription.textContent =
+        data.description;
+
+    const icons = {
+    ummi: "fa-book-open-reader",
+    haji: "fa-kaaba",
+    iptek: "fa-laptop-code",
+    lingkungan: "fa-leaf",
+    family: "fa-people-roof",
+    fullday: "fa-school"
+};
+
+
+    modalIcon.innerHTML =
+    `<i class="fa-solid ${icons[program]}"></i>`;
+
+    updateGallery();
+
+    programModal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+/* =========================
+   CLOSE MODAL
+========================= */
+
+function closeProgramModal() {
+
+    programModal.classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+
+/* =========================
+   UPDATE GALLERY
+========================= */
+
+function updateGallery() {
+
+    const data = programData[currentProgram];
+
+    if (!data) return;
+
+    const totalPages = Math.ceil(
+        data.images.length / photosPerPage
+    );
+
+    const start =
+        (currentGalleryPage - 1) * photosPerPage;
+
+    const images =
+        data.images.slice(
+            start,
+            start + photosPerPage
+        );
+
+
+    /* Kosongkan galeri */
+
+    programGallery.innerHTML = "";
+
+
+    /* Buat foto */
+
+    images.forEach(function(image) {
+
+        const wrapper =
+            document.createElement("div");
+
+        wrapper.className =
+            "program-gallery-item";
+
+
+        const img =
+            document.createElement("img");
+
+        img.src = image;
+
+        img.alt = data.title;
+
+        img.loading = "lazy";
+
+
+        wrapper.appendChild(img);
+
+        programGallery.appendChild(wrapper);
+
+    });
+
+
+    /* Nomor halaman */
+
+    galleryPage.textContent =
+        currentGalleryPage + " / " + totalPages;
+
+
+    /* Tombol kiri */
+
+    galleryPrev.disabled =
+        currentGalleryPage === 1;
+
+
+    /* Tombol kanan */
+
+    galleryNext.disabled =
+        currentGalleryPage === totalPages;
+
+
+    galleryPrev.style.opacity =
+        currentGalleryPage === 1 ? "0.4" : "1";
+
+    galleryNext.style.opacity =
+        currentGalleryPage === totalPages ? "0.4" : "1";
+}
+
+
+/* =========================
+   NEXT
+========================= */
+
+function nextGalleryPage() {
+
+    const data = programData[currentProgram];
+
+    if (!data) return;
+
+    const totalPages = Math.ceil(
+        data.images.length / photosPerPage
+    );
+
+    if (currentGalleryPage < totalPages) {
+
+        currentGalleryPage++;
+
+        updateGallery();
+    }
+}
+
+
+/* =========================
+   PREVIOUS
+========================= */
+
+function previousGalleryPage() {
+
+    if (currentGalleryPage > 1) {
+
+        currentGalleryPage--;
+
+        updateGallery();
+    }
+}
+
+
+/* =========================
+   CLICK LUAR MODAL
+========================= */
+
+programModal.addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === programModal) {
+
+            closeProgramModal();
+
+        }
+
+    }
+);
+
+
+/* =========================
+   ESC
+========================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeProgramModal();
+
+        }
+
+    }
+);
     </script>
 </body>
 </html>
